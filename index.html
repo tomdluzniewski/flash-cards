@@ -201,42 +201,10 @@
   }
   .empty strong{ display:block; color:var(--ink); font-size:1.05rem; margin-bottom:6px; }
 
-  /* ---------- Pomoc ---------- */
-  .help{
-    margin-top:22px;
-    background:rgba(255,255,255,.72);
-    border:1px solid var(--border);
-    border-radius:var(--radius-lg);
-    box-shadow:var(--shadow-sm);
-    overflow:hidden;
-  }
-  .help summary{
-    list-style:none;
-    cursor:pointer;
-    padding:16px 20px;
-    display:flex; align-items:center; gap:10px;
-    font-weight:700; font-size:.97rem;
-  }
-  .help summary::-webkit-details-marker{ display:none; }
-  .help summary svg.i{ width:18px; height:18px; color:var(--accent); flex:none; }
-  .help summary .chev{ margin-left:auto; width:16px; height:16px; color:var(--ink-faint); transition:transform .2s ease; }
-  .help[open] summary .chev{ transform:rotate(180deg); }
-  .help-body{ padding:0 20px 20px; color:var(--ink-soft); font-size:.95rem; line-height:1.65; }
-  .help-body p{ margin:0 0 12px; }
-  .help-body p:last-child{ margin-bottom:0; }
   code{
     font-family:var(--mono); font-size:.87em;
     background:var(--surface-2); color:#7A5B45;
     padding:2px 6px; border-radius:6px;
-  }
-  pre{
-    margin:0 0 12px;
-    font-family:var(--mono); font-size:.85rem; line-height:1.7;
-    background:#FBF4EC; border:1px solid var(--border);
-    border-radius:var(--radius-md);
-    padding:14px 16px;
-    overflow-x:auto;
-    color:#6B5645;
   }
   kbd{
     font-family:var(--mono); font-size:.78em;
@@ -388,19 +356,6 @@
       <input type="file" id="import-file" accept="application/json,.json" hidden>
     </div>
 
-    <details class="help">
-      <summary>
-        <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-        Jak dodać własną bazę słówek?
-        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-      </summary>
-      <div class="help-body">
-        <p>Baza to zwykły plik tekstowy w katalogu <code>data/</code>. W każdej linii jedna para słówek — po polsku, średnik, po angielsku:</p>
-        <pre>dom ; house
-samochód ; car / automobile</pre>
-        <p>Jeśli poprawnych tłumaczeń jest kilka, rozdziel je ukośnikiem — zaliczę każde z nich. Nazwa pliku staje się nazwą bazy na tej liście.</p>
-      </div>
-    </details>
 
     <footer>Powodzenia w nauce!</footer>
   </section>
