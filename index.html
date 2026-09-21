@@ -305,11 +305,9 @@
   .yours{ font-size:1.7rem; font-weight:800; letter-spacing:-.01em; line-height:1.25; margin:6px 0 18px; overflow-wrap:anywhere; }
   .yours.good{ color:var(--good); } .yours.bad{ color:var(--bad); }
 
-  .wordstats{
-    margin-top:20px; padding-top:12px;
-    border-top:1px dashed var(--border);
-    font-size:.85rem; color:var(--ink-faint);
-    display:flex; gap:14px;
+  .underbar{
+    display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;
+    margin-top:14px;
   }
 
   /* ---------- Telefon ---------- */
@@ -368,13 +366,6 @@
         Bazy
       </button>
       <h2 class="deck-title" id="dbname"></h2>
-      <div class="counters" aria-live="polite">
-        <span class="pill good">✓ <span id="cnt-ok">0</span></span>
-        <span class="pill bad">✗ <span id="cnt-bad">0</span></span>
-      </div>
-      <label class="switch" title="Odpowiadaj w myślach zamiast wpisywać">
-        <input type="checkbox" id="mind"><span>W myślach</span>
-      </label>
     </div>
 
     <div class="card">
@@ -415,8 +406,16 @@
           <button class="btn btn-bad" id="btn-bad">✗ Źle</button>
         </div>
       </div>
+    </div>
 
-      <div class="wordstats" id="wordstats"></div>
+    <div class="underbar">
+      <div class="counters" aria-live="polite">
+        <span class="pill good">✓ <span id="cnt-ok">0</span></span>
+        <span class="pill bad">✗ <span id="cnt-bad">0</span></span>
+      </div>
+      <label class="switch" title="Odpowiadaj w myślach zamiast wpisywać">
+        <input type="checkbox" id="mind"><span>W myślach</span>
+      </label>
     </div>
   </section>
 
@@ -526,11 +525,9 @@
 
   function renderPhase() {
     const mind = $('mind').checked;
-    const w = state.current;
     $('ask-type').classList.toggle('hidden', state.phase !== 'ask' || mind);
     $('ask-mind').classList.toggle('hidden', state.phase !== 'ask' || !mind);
     $('answered').classList.toggle('hidden', state.phase !== 'answered');
-    $('wordstats').innerHTML = `<span>To słowo:</span><span>pomyłki <b>${w.wrong}</b></span><span>trafienia <b>${w.correct}</b></span>`;
     if (state.phase === 'ask' && !mind) $('input').focus();
     if (state.phase === 'answered') {
       $('btn-ok').classList.toggle('active', state.auto === true);
