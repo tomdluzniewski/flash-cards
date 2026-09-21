@@ -1,0 +1,15 @@
+# Blueprint dla Render.com – darmowy web service uruchamiający server.py
+services:
+  - type: web
+    name: flash-cards
+    runtime: python
+    plan: free
+    buildCommand: "echo no build"
+    startCommand: "python3 server.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.8"
+      - key: HOST
+        value: "0.0.0.0"
+      - key: EPHEMERAL
+        value: "1"

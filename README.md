@@ -44,6 +44,20 @@ na macOS warto pobrać głos „Daniel (Enhanced)” w Ustawienia → Dostępno�
 Skill `.claude/skills/vocab` wybiera z tekstu idiomy, kolokacje i słownictwo, dopisuje blok z datą na koniec
 `data/msnbc.txt` (pomijając duplikaty) i uruchamia `pron.py`.
 
+## Wdrożenie na Render.com (darmowy web service)
+
+W repozytorium jest `render.yaml` (Blueprint). W panelu Render: **New → Blueprint** → wybierz to repozytorium → **Apply**.
+Render uruchomi `python3 server.py` z `HOST=0.0.0.0`, portem z `$PORT` i flagą `EPHEMERAL=1`. Każdy `git push`
+na `main` wdraża nową wersję.
+
+Na darmowym planie dysk jest ulotny (po uśpieniu serwisu pliki wracają do stanu z repozytorium), dlatego przy
+`EPHEMERAL=1` statystyki pomyłek trzymane są w przeglądarce (`localStorage`), a nie w `data/*.stats.json`.
+Na ekranie wyboru bazy są wtedy przyciski **Eksportuj / Importuj** – plik JSON ma ten sam format co
+`data/<baza>.stats.json`, więc można go też wgrać do repozytorium i używać lokalnie. Safari kasuje dane witryny
+nieużywanej przez 7 dni – warto eksportować co jakiś czas.
+
+Serwis usypia po 15 min bezczynności; pierwsze otwarcie po przerwie trwa 30–60 s.
+
 ## Tryby
 
 - **Przełącznik „W myślach” wyłączony** — wpisujesz odpowiedź, `Enter` sprawdza (bez rozróżniania wielkości liter),

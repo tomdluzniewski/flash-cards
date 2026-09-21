@@ -6,12 +6,15 @@ Statystyki:  data/<nazwa>.stats.json — liczba złych/dobrych odpowiedzi na sł
 """
 import json
 import os
+import re
 import sys
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from urllib.parse import unquote
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(ROOT, "data")
+# Na hostingu z ulotnym dyskiem (np. Render free) statystyki trzyma przeglądarka, nie pliki.
+EPHEMERAL = os.environ.get("EPHEMERAL") == "1"
 
 
 def parse_line(line):
@@ -100,7 +103,7 @@ class Handler(SimpleHTTPRequestHandler):
             self.path = "/index.html"
             return super().do_GET()
         if self.path == "/api/dbs":
-            return self.send_json(list_dbs())
+            return self.send_json({"dbs": list_dbs(), "ephemeral": EPHEMERAL})
         if self.path.startswith("/api/db/"):
             name = safe_name(self.path[len("/api/db/"):])
             if not name:
@@ -122,7 +125,44 @@ class Handler(SimpleHTTPRequestHandler):
             return self.send_json({"name": name, "words": words})
         if self.path.startswith("/api/"):
             return self.send_json({"error": "not found"}, 404)
+        if self.headers.get("Range"):
+            return self.send_range()
         return super().do_GET()
+
+    def send_range(self):
+        """Odpowiedź 206 na żądanie zakresu – Safari wymaga tego przy odtwarzaniu <audio>."""
+        path = self.translate_path(self.path)
+        if not os.path.isfile(path):
+            return self.send_error(404)
+        size = os.path.getsize(path)
+        m = re.fullmatch(r"bytes=(\d*)-(\d*)", self.headers["Range"].strip())
+        if not m or (not m.group(1) and not m.group(2)):
+            return self.send_error(400)
+        if m.group(1):
+            start = int(m.group(1))
+            end = int(m.group(2)) if m.group(2) else size - 1
+        else:  # "bytes=-N" – ostatnie N bajtów
+            start, end = max(0, size - int(m.group(2))), size - 1
+        end = min(end, size - 1)
+        if start > end or start >= size:
+            self.send_response(416)
+            self.send_header("Content-Range", f"bytes */{size}")
+            self.end_headers()
+            return
+        self.send_response(206)
+        self.send_header("Content-Type", self.guess_type(path))
+        self.send_header("Content-Range", f"bytes {start}-{end}/{size}")
+        self.send_header("Content-Length", str(end - start + 1))
+        self.end_headers()
+        with open(path, "rb") as f:
+            f.seek(start)
+            self.wfile.write(f.read(end - start + 1))
+
+    def end_headers(self):
+        # Pliki statyczne: informuj, że zakresy są obsługiwane (Safari sprawdza to przed odtworzeniem).
+        if not self.path.startswith("/api/"):
+            self.send_header("Accept-Ranges", "bytes")
+        super().end_headers()
 
     def do_POST(self):
         length = int(self.headers.get("Content-Length") or 0)
@@ -153,10 +193,11 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8000
+    PORT = int(sys.argv[1]) if len(sys.argv) > 1 else int(os.environ.get("PORT") or 8000)
+    HOST = os.environ.get("HOST", "127.0.0.1")
     os.makedirs(DATA_DIR, exist_ok=True)
-    print(f"Memorize: http://localhost:{PORT}  (bazy w {DATA_DIR})")
+    print(f"Memorize: http://{HOST}:{PORT}  (bazy w {DATA_DIR}, statystyki: {'przeglądarka' if EPHEMERAL else 'pliki'})")
     try:
-        HTTPServer(("127.0.0.1", PORT), Handler).serve_forever()
+        ThreadingHTTPServer((HOST, PORT), Handler).serve_forever()
     except KeyboardInterrupt:
         pass

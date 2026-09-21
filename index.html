@@ -245,6 +245,14 @@
     padding:2px 7px; border-radius:6px;
   }
 
+  .stats-bar{
+    margin-top:14px;
+    display:flex; align-items:center; gap:8px; flex-wrap:wrap;
+    font-size:.85rem; color:var(--ink-faint);
+  }
+  .stats-bar .btn{ padding:7px 14px; font-size:.85rem; }
+  .stats-bar span{ flex:1; min-width:12ch; }
+
   footer{
     margin-top:26px;
     text-align:center;
@@ -373,6 +381,12 @@
 
     <h2 class="section-label">Twoje bazy</h2>
     <ul class="deck-list" id="dblist"></ul>
+    <div class="stats-bar hidden" id="stats-bar">
+      <span>Statystyki są zapisane w tej przeglądarce.</span>
+      <button class="btn btn-soft" id="export">Eksportuj</button>
+      <button class="btn btn-soft" id="import">Importuj</button>
+      <input type="file" id="import-file" accept="application/json,.json" hidden>
+    </div>
 
     <details class="help">
       <summary>
@@ -460,7 +474,15 @@ samochód ; car / automobile</pre>
     ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
     : {}).then(r => r.json());
 
-  const state = { db: null, words: [], current: null, last: null, phase: 'ask', auto: null, ok: 0, bad: 0 };
+  const state = { db: null, words: [], current: null, last: null, phase: 'ask', auto: null, ok: 0, bad: 0, ephemeral: false };
+
+  // Statystyki w przeglądarce – używane, gdy serwer nie ma trwałego dysku (hosting).
+  const localStats = {
+    key: db => 'memorize.stats.' + db,
+    load(db) { try { return JSON.parse(localStorage.getItem(this.key(db))) || {}; } catch (e) { return {}; } },
+    save(db, stats) { try { localStorage.setItem(this.key(db), JSON.stringify(stats)); } catch (e) {} },
+    clear(db) { try { localStorage.removeItem(this.key(db)); } catch (e) {} },
+  };
 
   const ICON_BOOK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>';
   const ICON_ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
@@ -470,7 +492,9 @@ samochód ; car / automobile</pre>
   async function showPicker() {
     $('learn').classList.add('hidden');
     $('pick').classList.remove('hidden');
-    const dbs = await api('/api/dbs');
+    const { dbs, ephemeral } = await api('/api/dbs');
+    state.ephemeral = ephemeral;
+    $('stats-bar').classList.toggle('hidden', !ephemeral);
     const list = $('dblist');
     list.innerHTML = '';
     if (!dbs.length) {
@@ -494,7 +518,10 @@ samochód ; car / automobile</pre>
         </div>`;
       li.querySelectorAll('a').forEach(a => a.onclick = e => { e.preventDefault(); startSession(db.name); });
       li.querySelector('[data-reset]').onclick = () => {
-        if (confirm(`Wyzerować statystyki bazy „${db.name}”?`)) api(`/api/db/${encodeURIComponent(db.name)}/reset`, {});
+        if (confirm(`Wyzerować statystyki bazy „${db.name}”?`)) {
+          localStats.clear(db.name);
+          if (!state.ephemeral) api(`/api/db/${encodeURIComponent(db.name)}/reset`, {});
+        }
       };
       list.appendChild(li);
     }
@@ -504,6 +531,13 @@ samochód ; car / automobile</pre>
   async function startSession(name) {
     const data = await api(`/api/db/${encodeURIComponent(name)}`);
     if (!data.words || !data.words.length) { alert(data.error ? 'Nie ma takiej bazy.' : 'Ta baza jest pusta.'); return showPicker(); }
+    if (state.ephemeral) {
+      const stats = localStats.load(name);
+      for (const w of data.words) {
+        const s = stats[w.pl + ' ; ' + w.en] || {};
+        w.wrong = s.wrong || 0; w.correct = s.correct || 0;
+      }
+    }
     Object.assign(state, { db: name, words: data.words, current: null, last: null, ok: 0, bad: 0 });
     $('dbname').textContent = name;
     $('cnt-ok').textContent = 0; $('cnt-bad').textContent = 0;
@@ -634,7 +668,13 @@ samochód ; car / automobile</pre>
     if (ok) { state.ok++; w.correct++; } else { state.bad++; w.wrong++; }
     $('cnt-ok').textContent = state.ok;
     $('cnt-bad').textContent = state.bad;
-    api(`/api/db/${encodeURIComponent(state.db)}/answer`, { pl: w.pl, en: w.en, ok });
+    if (state.ephemeral) {
+      const stats = localStats.load(state.db);
+      stats[w.pl + ' ; ' + w.en] = { wrong: w.wrong, correct: w.correct };
+      localStats.save(state.db, stats);
+    } else {
+      api(`/api/db/${encodeURIComponent(state.db)}/answer`, { pl: w.pl, en: w.en, ok });
+    }
     nextWord();
   }
 
@@ -646,6 +686,38 @@ samochód ; car / automobile</pre>
   $('btn-ok').onclick = () => grade(true);
   $('btn-bad').onclick = () => grade(false);
   $('speak').onclick = speak;
+
+  // eksport / import statystyk z przeglądarki – jeden plik JSON ze wszystkimi bazami:
+  // { "<baza>": { "pl ; en": {"wrong": n, "correct": n}, ... }, ... }
+  $('export').onclick = () => {
+    const all = {};
+    try {
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        if (k.startsWith('memorize.stats.')) all[k.slice('memorize.stats.'.length)] = JSON.parse(localStorage.getItem(k));
+      }
+    } catch (e) {}
+    const blob = new Blob([JSON.stringify(all, null, 1)], { type: 'application/json' });
+    const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: 'memorize-stats.json' });
+    a.click();
+    URL.revokeObjectURL(a.href);
+  };
+  $('import').onclick = () => $('import-file').click();
+  $('import-file').onchange = async () => {
+    const file = $('import-file').files[0];
+    if (!file) return;
+    try {
+      const all = JSON.parse(await file.text());
+      let n = 0;
+      for (const [db, stats] of Object.entries(all)) {
+        if (stats && typeof stats === 'object') { localStats.save(db, stats); n++; }
+      }
+      alert(n ? `Wczytano statystyki ${n} baz.` : 'Plik nie zawiera statystyk.');
+    } catch (e) {
+      alert('Nie udało się wczytać pliku: ' + e.message);
+    }
+    $('import-file').value = '';
+  };
 
   // przełączniki pamiętane między sesjami
   for (const id of ['mind']) {

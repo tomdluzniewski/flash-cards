@@ -15,6 +15,10 @@
   "correct": 0,
   "wrong": 1
  },
+ "deportować ; to deport": {
+  "correct": 0,
+  "wrong": 1
+ },
  "drobiazg, małe piwo ; small potatoes": {
   "correct": 0,
   "wrong": 1
@@ -27,17 +31,25 @@
   "correct": 0,
   "wrong": 1
  },
+ "kolejne totalne kłamstwo ; another total lie": {
+  "correct": 1,
+  "wrong": 0
+ },
  "kryzys drożyzny, kryzys dostępności cenowej ; an affordability crisis": {
   "correct": 0,
-  "wrong": 1
+  "wrong": 2
  },
  "kryzys egzystencjalny ; an existential crisis": {
   "correct": 0,
   "wrong": 1
  },
- "ludzie na samej górze, którzy podejmują decyzje ; the people at the top making decisions": {
+ "ludzi nie stać na życie ; people can't afford their lives": {
   "correct": 0,
   "wrong": 1
+ },
+ "ludzie na samej górze, którzy podejmują decyzje ; the people at the top making decisions": {
+  "correct": 0,
+  "wrong": 2
  },
  "musieć się z czegoś tłumaczyć, odpowiadać za coś ; to have to answer for something": {
   "correct": 0,
@@ -65,13 +77,17 @@
  },
  "odebrać komuś ubezpieczenie zdrowotne ; to kick someone off health care": {
   "correct": 0,
-  "wrong": 1
+  "wrong": 2
  },
  "oglądamy te przemówienia, żeby inni nie musieli ; we watch these speeches so other people don't have to": {
   "correct": 0,
   "wrong": 1
  },
  "osoba spoza establishmentu ; an outsider": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "pociągnąć kogoś do odpowiedzialności ; to hold someone accountable": {
   "correct": 0,
   "wrong": 1
  },
@@ -84,7 +100,7 @@
   "wrong": 1
  },
  "przede wszystkim ; first of all": {
-  "correct": 0,
+  "correct": 1,
   "wrong": 2
  },
  "przesłanka (do wszczęcia śledztwa) ; a predicate": {
@@ -102,6 +118,10 @@
  "remis (w sondażu) ; tied": {
   "correct": 0,
   "wrong": 2
+ },
+ "rok fali (wyborczej) ; a wave year": {
+  "correct": 0,
+  "wrong": 1
  },
  "runąć, spaść na łeb na szyję ; to come tumbling down": {
   "correct": 0,
@@ -125,7 +145,7 @@
  },
  "to się nadaje na naklejkę na zderzak (chwytliwe hasło) ; put that on a bumper sticker": {
   "correct": 0,
-  "wrong": 1
+  "wrong": 2
  },
  "tuszowanie ; a cover-up": {
   "correct": 0,
@@ -153,7 +173,7 @@
  },
  "zaprzedać się (np. wielkim firmom technologicznym) ; to sell out": {
   "correct": 0,
-  "wrong": 3
+  "wrong": 5
  },
  "zrzucić parę kilo ; to cut a few pounds": {
   "correct": 0,
