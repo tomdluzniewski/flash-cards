@@ -1,0 +1,10 @@
+# Format: po polsku ; in English   (linie zaczynające się od # są pomijane)
+# Kilka akceptowanych odpowiedzi rozdziel ukośnikiem: samochód ; car / automobile
+pies ; dog
+kot ; cat
+samochód ; car / automobile
+mieć na coś ochotę ; to feel like something
+przy okazji ; by the way
+nie ma za co ; you're welcome
+dać komuś znać ; to let someone know
+na dłuższą metę ; in the long run

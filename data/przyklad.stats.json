@@ -1,0 +1,30 @@
+{
+ "dać komuś znać ; to let someone know": {
+  "correct": 1,
+  "wrong": 1
+ },
+ "kot ; cat": {
+  "correct": 2,
+  "wrong": 0
+ },
+ "mieć na coś ochotę ; to feel like something": {
+  "correct": 4,
+  "wrong": 1
+ },
+ "na dłuższą metę ; in the long run": {
+  "correct": 1,
+  "wrong": 3
+ },
+ "nie ma za co ; you're welcome": {
+  "correct": 1,
+  "wrong": 1
+ },
+ "pies ; dog": {
+  "correct": 3,
+  "wrong": 0
+ },
+ "samochód ; car / automobile": {
+  "correct": 2,
+  "wrong": 0
+ }
+}

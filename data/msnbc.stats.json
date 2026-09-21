@@ -1,0 +1,166 @@
+{
+ "bezprawne zwolnienie z pracy ; wrongful termination": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "brak przywództwa ; a lack of leadership": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "ciśnienie od wybuchu ; blast pressure": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "deklaracja misji, cel misji ; a mission statement": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "drobiazg, małe piwo ; small potatoes": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "dziwacznie ; bizarrely": {
+  "correct": 0,
+  "wrong": 3
+ },
+ "jednoczący moment ; a unifying moment": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "kryzys drożyzny, kryzys dostępności cenowej ; an affordability crisis": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "kryzys egzystencjalny ; an existential crisis": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "ludzie na samej górze, którzy podejmują decyzje ; the people at the top making decisions": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "musieć się z czegoś tłumaczyć, odpowiadać za coś ; to have to answer for something": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "na każdym kroku ; at every turn": {
+  "correct": 0,
+  "wrong": 4
+ },
+ "nadmierne picie w pracy ; excessive drinking on the job": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "nie mieć pojęcia, kiedy ; to have no idea when": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "nie można ich winić ; you can't really blame them": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "odbijać się na kimś, kosztować kogoś (psychicznie) ; to take a toll on someone": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "odebrać komuś ubezpieczenie zdrowotne ; to kick someone off health care": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "oglądamy te przemówienia, żeby inni nie musieli ; we watch these speeches so other people don't have to": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "osoba spoza establishmentu ; an outsider": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "poważne uszkodzenia ; major damage": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "pozbawić obywatelstwa ; to denaturalize": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "przede wszystkim ; first of all": {
+  "correct": 0,
+  "wrong": 2
+ },
+ "przesłanka (do wszczęcia śledztwa) ; a predicate": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "przez większość dorosłego życia ; for most of his adult life": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "regulować (prawnie) ; to regulate": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "remis (w sondażu) ; tied": {
+  "correct": 0,
+  "wrong": 2
+ },
+ "runąć, spaść na łeb na szyję ; to come tumbling down": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "skrajnie republikański stan ; a ruby red state / a deep red state": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "stoimy z zamkniętymi oczami i dostajemy po twarzy ; we're standing there with our eyes closed, getting punched in the face": {
+  "correct": 0,
+  "wrong": 2
+ },
+ "techniczne, fachowe stanowisko ; a technocratic job": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "to dopiero wierzchołek góry lodowej ; that's just the tip of the iceberg": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "to się nadaje na naklejkę na zderzak (chwytliwe hasło) ; put that on a bumper sticker": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "tuszowanie ; a cover-up": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "ukrywać coś przed opinią publiczną ; to keep something from the public eye": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "w normalnych okolicznościach ; under normal circumstances": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "warte obserwowania ; one to watch": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "wybory stanowe (na poziomie całego stanu) ; a statewide race": {
+  "correct": 1,
+  "wrong": 2
+ },
+ "zapaść w pamięć, nie dawać spokoju ; to stick with someone": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "zaprzedać się (np. wielkim firmom technologicznym) ; to sell out": {
+  "correct": 0,
+  "wrong": 3
+ },
+ "zrzucić parę kilo ; to cut a few pounds": {
+  "correct": 0,
+  "wrong": 1
+ },
+ "środki do życia ; livelihoods": {
+  "correct": 0,
+  "wrong": 1
+ }
+}

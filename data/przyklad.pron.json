@@ -1,0 +1,42 @@
+{
+ "automobile": {
+  "audio": "audio/automobile.mp3",
+  "ipa": "/ˈɔː.tə.məˌbiːl/",
+  "word": "automobile"
+ },
+ "by the way": {
+  "audio": "audio/tts/by-the-way.mp3",
+  "tts": true
+ },
+ "car": {
+  "audio": "audio/car.mp3",
+  "ipa": "/kɑː/",
+  "word": "car"
+ },
+ "cat": {
+  "audio": "audio/cat.mp3",
+  "ipa": "/ˈkæt/",
+  "word": "cat"
+ },
+ "dog": {
+  "audio": "audio/dog.mp3",
+  "ipa": "/dɒɡ/",
+  "word": "dog"
+ },
+ "in the long run": {
+  "audio": "audio/tts/in-the-long-run.mp3",
+  "tts": true
+ },
+ "to feel like something": {
+  "audio": "audio/tts/to-feel-like-something.mp3",
+  "tts": true
+ },
+ "to let someone know": {
+  "audio": "audio/tts/to-let-someone-know.mp3",
+  "tts": true
+ },
+ "you're welcome": {
+  "audio": "audio/tts/you-re-welcome.mp3",
+  "tts": true
+ }
+}

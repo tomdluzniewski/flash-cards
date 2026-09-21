@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Memorize</title>
+<!-- Zaokrąglony krój pisma. Bez internetu strona użyje systemowego fontu — możesz ten link usunąć. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ---------- Design tokens ---------- */
+  :root{
+    --bg:          #FBF6F0;
+    --bg-tint-1:   #FFE6D2;   /* ciepła plama w tle */
+    --bg-tint-2:   #DDEFEA;   /* chłodna plama w tle */
+    --surface:     #FFFFFF;
+    --surface-2:   #F6EDE5;
+    --border:      #EFE3D7;
+    --ink:         #2E2925;
+    --ink-soft:    #6F645C;
+    --ink-faint:   #A2968D;
+    --primary:     #E4694A;
+    --primary-ink: #FFFFFF;
+    --primary-soft:#FDEDE7;
+    --accent:      #2F9E8F;
+    --accent-soft: #E3F2EF;
+    --good:        #2F9E8F;
+    --good-soft:   #E3F2EF;
+    --bad:         #C9483A;
+    --bad-soft:    #FBE6E2;
+    --radius-lg:   22px;
+    --radius-md:   14px;
+    --radius-sm:   10px;
+    --shadow-sm:   0 1px 2px rgba(63,44,32,.05);
+    --shadow-md:   0 6px 18px -8px rgba(63,44,32,.18), 0 2px 6px rgba(63,44,32,.05);
+    --shadow-lg:   0 18px 40px -22px rgba(63,44,32,.38), 0 4px 12px rgba(63,44,32,.06);
+    --font: "Nunito", ui-rounded, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+  *,*::before,*::after{ box-sizing:border-box; }
+
+  html,body{ height:100%; }
+  body{
+    margin:0;
+    font-family:var(--font);
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:48px 20px;
+    min-height:100%;
+    position:relative;
+    overflow-x:hidden;
+  }
+  /* miękkie plamy koloru w tle */
+  body::before,body::after{
+    content:"";
+    position:fixed;
+    z-index:0;
+    border-radius:50%;
+    filter:blur(70px);
+    opacity:.55;
+    pointer-events:none;
+  }
+  body::before{ width:520px; height:520px; background:var(--bg-tint-1); top:-180px; left:-160px; }
+  body::after { width:460px; height:460px; background:var(--bg-tint-2); bottom:-200px; right:-140px; }
+
+  .page{ position:relative; z-index:1; width:100%; max-width:600px; }
+  .hidden{ display:none !important; }
+
+  /* ---------- Nagłówek ---------- */
+  .hero{ text-align:center; margin-bottom:34px; }
+  .mark{
+    width:66px; height:66px; margin:0 auto 18px;
+    display:grid; place-items:center;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:20px;
+    box-shadow:var(--shadow-md);
+  }
+  .mark svg{ width:34px; height:34px; display:block; }
+  h1{
+    margin:0 0 8px;
+    font-size:2.15rem;
+    font-weight:800;
+    letter-spacing:-.02em;
+  }
+  .lead{
+    margin:0 auto;
+    max-width:34ch;
+    color:var(--ink-soft);
+    font-size:1.03rem;
+    line-height:1.55;
+  }
+
+  /* ---------- Lista baz ---------- */
+  .section-label{
+    display:flex; align-items:center; gap:10px;
+    margin:0 4px 12px;
+    font-size:.78rem;
+    font-weight:700;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+  }
+  .section-label::after{ content:""; flex:1; height:1px; background:var(--border); }
+
+  .deck-list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:12px; }
+
+  .deck{
+    position:relative;
+    display:flex; align-items:center; gap:16px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius-lg);
+    padding:18px 20px;
+    box-shadow:var(--shadow-sm);
+    transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  }
+  .deck:hover{ transform:translateY(-2px); box-shadow:var(--shadow-lg); border-color:#E6D3C4; }
+  .deck:focus-within{ border-color:var(--primary); box-shadow:var(--shadow-md); }
+
+  .deck-icon{
+    flex:none;
+    width:48px; height:48px;
+    display:grid; place-items:center;
+    border-radius:16px;
+    background:var(--primary-soft);
+    color:var(--primary);
+    font-size:1.2rem; font-weight:800;
+    text-transform:uppercase;
+  }
+  .deck:nth-child(3n+2) .deck-icon{ background:var(--accent-soft); color:var(--accent); }
+  .deck:nth-child(3n+3) .deck-icon{ background:#FDF3DC; color:#B98218; }
+
+  .deck-body{ flex:1; min-width:0; }
+  .deck-name{ margin:0; font-size:1.13rem; font-weight:800; letter-spacing:-.01em; overflow-wrap:anywhere; }
+  /* cały wiersz klikalny, a nazwa pozostaje właściwym linkiem */
+  .deck-name a{ color:inherit; text-decoration:none; }
+  .deck-name a::after{ content:""; position:absolute; inset:0; border-radius:var(--radius-lg); }
+  .deck-name a:focus-visible::after{ outline:3px solid var(--primary); outline-offset:3px; }
+
+  .deck-meta{
+    margin:4px 0 0;
+    display:flex; align-items:center; gap:8px;
+    color:var(--ink-soft);
+    font-size:.92rem;
+  }
+  .deck-meta svg{ width:15px; height:15px; opacity:.7; }
+
+  .deck-actions{ flex:none; display:flex; align-items:center; gap:6px; position:relative; z-index:2; }
+
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    font:inherit; font-weight:700; font-size:.93rem;
+    border-radius:999px;
+    border:1px solid transparent;
+    padding:10px 18px;
+    cursor:pointer;
+    text-decoration:none;
+    color:inherit;
+    background:transparent;
+    transition:background .16s ease, color .16s ease, border-color .16s ease, transform .16s ease;
+  }
+  .btn:active{ transform:translateY(1px); }
+  .btn svg{ width:16px; height:16px; }
+  .btn-primary{ background:var(--primary); color:var(--primary-ink); box-shadow:0 6px 14px -8px rgba(228,105,74,.9); }
+  .btn-primary:hover{ background:#D25A3C; }
+  .btn-primary svg{ transition:transform .16s ease; }
+  .deck:hover .btn-primary svg{ transform:translateX(3px); }
+
+  .btn-ghost{
+    background:transparent; color:var(--ink-faint);
+    padding:9px; border-radius:50%;
+    line-height:0;
+  }
+  .btn-ghost svg{ width:18px; height:18px; }
+  .btn-ghost:hover{ background:var(--surface-2); color:var(--ink); }
+
+  .btn-soft{ background:var(--surface-2); color:var(--ink-soft); }
+  .btn-soft:hover{ color:var(--ink); background:#EFE3D7; }
+
+  .btn-good{ background:var(--good-soft); color:var(--good); border-color:transparent; }
+  .btn-good:hover, .btn-good.active{ background:var(--good); color:#fff; }
+  .btn-bad{ background:var(--bad-soft); color:var(--bad); border-color:transparent; }
+  .btn-bad:hover, .btn-bad.active{ background:var(--bad); color:#fff; }
+  .btn-good.active, .btn-bad.active{ box-shadow:var(--shadow-md); }
+
+  /* ---------- Pusty stan ---------- */
+  .empty{
+    text-align:center;
+    background:var(--surface);
+    border:1px dashed #E3D2C2;
+    border-radius:var(--radius-lg);
+    padding:34px 24px;
+    color:var(--ink-soft);
+  }
+  .empty strong{ display:block; color:var(--ink); font-size:1.05rem; margin-bottom:6px; }
+
+  /* ---------- Pomoc ---------- */
+  .help{
+    margin-top:22px;
+    background:rgba(255,255,255,.72);
+    border:1px solid var(--border);
+    border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-sm);
+    overflow:hidden;
+  }
+  .help summary{
+    list-style:none;
+    cursor:pointer;
+    padding:16px 20px;
+    display:flex; align-items:center; gap:10px;
+    font-weight:700; font-size:.97rem;
+  }
+  .help summary::-webkit-details-marker{ display:none; }
+  .help summary svg.i{ width:18px; height:18px; color:var(--accent); flex:none; }
+  .help summary .chev{ margin-left:auto; width:16px; height:16px; color:var(--ink-faint); transition:transform .2s ease; }
+  .help[open] summary .chev{ transform:rotate(180deg); }
+  .help-body{ padding:0 20px 20px; color:var(--ink-soft); font-size:.95rem; line-height:1.65; }
+  .help-body p{ margin:0 0 12px; }
+  .help-body p:last-child{ margin-bottom:0; }
+  code{
+    font-family:var(--mono); font-size:.87em;
+    background:var(--surface-2); color:#7A5B45;
+    padding:2px 6px; border-radius:6px;
+  }
+  pre{
+    margin:0 0 12px;
+    font-family:var(--mono); font-size:.85rem; line-height:1.7;
+    background:#FBF4EC; border:1px solid var(--border);
+    border-radius:var(--radius-md);
+    padding:14px 16px;
+    overflow-x:auto;
+    color:#6B5645;
+  }
+  kbd{
+    font-family:var(--mono); font-size:.78em;
+    background:var(--surface-2); color:var(--ink-soft);
+    border:1px solid var(--border); border-bottom-width:2px;
+    padding:2px 7px; border-radius:6px;
+  }
+
+  footer{
+    margin-top:26px;
+    text-align:center;
+    font-size:.85rem;
+    color:var(--ink-faint);
+  }
+
+  /* ---------- Ekran nauki ---------- */
+  .topbar{
+    display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+    margin-bottom:18px;
+  }
+  .topbar .btn-soft{ padding:8px 14px 8px 10px; font-size:.9rem; }
+  .topbar .deck-title{ flex:1; min-width:0; margin:0; font-size:1.2rem; font-weight:800; letter-spacing:-.01em; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+  .counters{ display:flex; gap:8px; }
+  .pill{
+    display:inline-flex; align-items:center; gap:6px;
+    padding:7px 14px; border-radius:999px;
+    font-weight:800; font-size:.95rem;
+    background:var(--surface); border:1px solid var(--border); box-shadow:var(--shadow-sm);
+    font-variant-numeric:tabular-nums;
+  }
+  .pill.good{ color:var(--good); }
+  .pill.bad{ color:var(--bad); }
+
+  .switch{
+    display:inline-flex; align-items:center; gap:9px; cursor:pointer;
+    font-weight:700; font-size:.9rem; color:var(--ink-soft); user-select:none;
+    background:var(--surface); border:1px solid var(--border); border-radius:999px;
+    padding:6px 12px 6px 6px; box-shadow:var(--shadow-sm);
+  }
+  .switch input{
+    appearance:none; width:40px; height:24px; border-radius:12px; margin:0; cursor:pointer;
+    background:#E3D2C2; position:relative; transition:background .16s ease;
+  }
+  .switch input::after{
+    content:""; position:absolute; top:3px; left:3px; width:18px; height:18px; border-radius:50%;
+    background:#fff; box-shadow:0 1px 3px rgba(63,44,32,.3); transition:left .16s ease;
+  }
+  .switch input:checked{ background:var(--accent); }
+  .switch input:checked::after{ left:19px; }
+  .switch input:checked + span{ color:var(--accent); }
+
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius-lg);
+    padding:28px 28px 22px;
+    box-shadow:var(--shadow-md);
+  }
+  .label{ font-size:.78rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-faint); }
+  .word{ font-size:2rem; font-weight:800; letter-spacing:-.02em; line-height:1.2; margin:6px 0 22px; overflow-wrap:anywhere; }
+  .answer-row{ display:flex; align-items:center; gap:12px; margin:6px 0 18px; }
+  .answer{ flex:1; min-width:0; font-size:1.7rem; font-weight:800; letter-spacing:-.01em; line-height:1.25; color:var(--accent); overflow-wrap:anywhere; }
+  .ipa{ font-family:var(--mono); font-size:.95rem; font-weight:400; color:var(--ink-soft); margin-top:4px; letter-spacing:.01em; }
+  .btn-speak{
+    flex:none; width:46px; height:46px; padding:0; border-radius:50%;
+    display:grid; place-items:center;
+    background:var(--accent-soft); color:var(--accent);
+  }
+  .btn-speak:hover{ background:var(--accent); color:#fff; }
+  .btn-speak svg{ width:22px; height:22px; }
+  .btn-speak.playing{ background:var(--accent); color:#fff; }
+
+  input[type=text]{
+    font:inherit; font-size:1.2rem; font-weight:600;
+    width:100%; padding:14px 18px;
+    border-radius:var(--radius-md);
+    border:1.5px solid var(--border);
+    background:var(--bg); color:var(--ink);
+    outline:none;
+    transition:border-color .16s ease, box-shadow .16s ease;
+  }
+  input[type=text]::placeholder{ color:var(--ink-faint); font-weight:400; }
+  input[type=text]:focus{ border-color:var(--primary); box-shadow:0 0 0 4px var(--primary-soft); background:var(--surface); }
+
+  .row{ display:flex; gap:10px; margin-top:16px; flex-wrap:wrap; }
+  .row .btn{ padding:11px 22px; font-size:1rem; }
+  .hint{ margin-top:16px; font-size:.85rem; color:var(--ink-faint); }
+
+  .yours{ font-size:1.7rem; font-weight:800; letter-spacing:-.01em; line-height:1.25; margin:6px 0 18px; overflow-wrap:anywhere; }
+  .yours.good{ color:var(--good); } .yours.bad{ color:var(--bad); }
+
+  .wordstats{
+    margin-top:20px; padding-top:12px;
+    border-top:1px dashed var(--border);
+    font-size:.85rem; color:var(--ink-faint);
+    display:flex; gap:14px;
+  }
+
+  /* ---------- Telefon ---------- */
+  @media (max-width:560px){
+    body{ padding:32px 16px; justify-content:flex-start; }
+    h1{ font-size:1.8rem; }
+    .deck{ flex-wrap:wrap; padding:16px; gap:14px; }
+    .deck-body{ flex:1 1 60%; }
+    .deck-actions{ flex:1 1 100%; justify-content:space-between; }
+    .deck .btn-primary{ flex:1; justify-content:center; }
+    .card{ padding:22px 20px 18px; }
+    .word{ font-size:1.6rem; }
+    .topbar .deck-title{ flex-basis:100%; order:-1; white-space:normal; }
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{ transition:none !important; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <!-- ============ EKRAN 1: WYBÓR BAZY ============ -->
+  <section id="pick">
+    <header class="hero">
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E4694A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 6.5C12 5 10.5 3.5 8.5 3.5S5 5 5 6.5c-1.2.4-2 1.5-2 2.8 0 .9.4 1.7 1 2.2-.6.5-1 1.3-1 2.2 0 1.6 1.3 2.8 2.9 2.8h.1c.2 1.6 1.6 2.8 3.3 2.8 1.5 0 2.7-1 2.7-2.3z"/>
+          <path d="M12 6.5C12 5 13.5 3.5 15.5 3.5S19 5 19 6.5c1.2.4 2 1.5 2 2.8 0 .9-.4 1.7-1 2.2.6.5 1 1.3 1 2.2 0 1.6-1.3 2.8-2.9 2.8h-.1c-.2 1.6-1.6 2.8-3.3 2.8-1.5 0-2.7-1-2.7-2.3z"/>
+          <path d="M12 6.5v13.5"/>
+        </svg>
+      </div>
+      <h1>Memorize</h1>
+      <p class="lead">Wybierz bazę słówek i zacznij powtórkę. Kilka minut dziennie wystarczy.</p>
+    </header>
+
+    <h2 class="section-label">Twoje bazy</h2>
+    <ul class="deck-list" id="dblist"></ul>
+
+    <details class="help">
+      <summary>
+        <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+        Jak dodać własną bazę słówek?
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </summary>
+      <div class="help-body">
+        <p>Baza to zwykły plik tekstowy w katalogu <code>data/</code>. W każdej linii jedna para słówek — po polsku, średnik, po angielsku:</p>
+        <pre>dom ; house
+samochód ; car / automobile</pre>
+        <p>Jeśli poprawnych tłumaczeń jest kilka, rozdziel je ukośnikiem — zaliczę każde z nich. Nazwa pliku staje się nazwą bazy na tej liście.</p>
+      </div>
+    </details>
+
+    <footer>Powodzenia w nauce!</footer>
+  </section>
+
+  <!-- ============ EKRAN 2: NAUKA ============ -->
+  <section id="learn" class="hidden">
+    <div class="topbar">
+      <button class="btn btn-soft" id="back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></svg>
+        Bazy
+      </button>
+      <h2 class="deck-title" id="dbname"></h2>
+      <div class="counters" aria-live="polite">
+        <span class="pill good">✓ <span id="cnt-ok">0</span></span>
+        <span class="pill bad">✗ <span id="cnt-bad">0</span></span>
+      </div>
+      <label class="switch" title="Odpowiadaj w myślach zamiast wpisywać">
+        <input type="checkbox" id="mind"><span>W myślach</span>
+      </label>
+    </div>
+
+    <div class="card">
+      <div class="label">Po polsku</div>
+      <div class="word" id="word"></div>
+
+      <!-- faza: pytanie, tryb pisania -->
+      <div id="ask-type">
+        <input type="text" id="input" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Wpisz po angielsku…">
+        <div class="row"><button class="btn btn-primary" id="check">Sprawdź</button></div>
+        <div class="hint"><kbd>Enter</kbd> sprawdź</div>
+      </div>
+
+      <!-- faza: pytanie, tryb w myślach -->
+      <div id="ask-mind" class="hidden">
+        <div class="row"><button class="btn btn-primary" id="reveal">Pokaż odpowiedź</button></div>
+        <div class="hint"><kbd>Enter</kbd> pokaż odpowiedź</div>
+      </div>
+
+      <!-- faza: odpowiedź -->
+      <div id="answered" class="hidden">
+        <div id="yours-block">
+          <div class="label">Twoja odpowiedź</div>
+          <div class="yours" id="yours"></div>
+        </div>
+        <div class="label">Po angielsku</div>
+        <div class="answer-row">
+          <div>
+            <div class="answer" id="answer"></div>
+            <div class="ipa" id="ipa"></div>
+          </div>
+          <button class="btn btn-speak" id="speak" title="Odtwórz wymowę (P)" aria-label="Odtwórz wymowę">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5.5a9 9 0 0 1 0 13"/></svg>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn btn-good" id="btn-ok">✓ Dobrze</button>
+          <button class="btn btn-bad" id="btn-bad">✗ Źle</button>
+        </div>
+      </div>
+
+      <div class="wordstats" id="wordstats"></div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const api = (path, body) => fetch(path, body
+    ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
+    : {}).then(r => r.json());
+
+  const state = { db: null, words: [], current: null, last: null, phase: 'ask', auto: null, ok: 0, bad: 0 };
+
+  const ICON_BOOK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>';
+  const ICON_ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
+  const ICON_RESET = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>';
+
+  // ---------- ekran wyboru bazy ----------
+  async function showPicker() {
+    $('learn').classList.add('hidden');
+    $('pick').classList.remove('hidden');
+    const dbs = await api('/api/dbs');
+    const list = $('dblist');
+    list.innerHTML = '';
+    if (!dbs.length) {
+      list.innerHTML = `<li class="empty"><strong>Nie ma jeszcze żadnej bazy</strong>
+        Wrzuć plik .txt do katalogu <code>data/</code> i odśwież tę stronę.</li>`;
+      return;
+    }
+    for (const db of dbs) {
+      const li = document.createElement('li');
+      li.className = 'deck';
+      const name = esc(db.name);
+      li.innerHTML = `
+        <div class="deck-icon" aria-hidden="true">${esc(db.name[0])}</div>
+        <div class="deck-body">
+          <h3 class="deck-name"><a href="#${encodeURIComponent(db.name)}">${name}</a></h3>
+          <p class="deck-meta">${ICON_BOOK} ${db.count} ${plural(db.count)}</p>
+        </div>
+        <div class="deck-actions">
+          <a class="btn btn-primary" href="#${encodeURIComponent(db.name)}">Ucz się ${ICON_ARROW}</a>
+          <button class="btn btn-ghost" data-reset title="Wyzeruj statystyki" aria-label="Wyzeruj statystyki bazy ${name}">${ICON_RESET}</button>
+        </div>`;
+      li.querySelectorAll('a').forEach(a => a.onclick = e => { e.preventDefault(); startSession(db.name); });
+      li.querySelector('[data-reset]').onclick = () => {
+        if (confirm(`Wyzerować statystyki bazy „${db.name}”?`)) api(`/api/db/${encodeURIComponent(db.name)}/reset`, {});
+      };
+      list.appendChild(li);
+    }
+  }
+
+  // ---------- sesja ----------
+  async function startSession(name) {
+    const data = await api(`/api/db/${encodeURIComponent(name)}`);
+    if (!data.words || !data.words.length) { alert(data.error ? 'Nie ma takiej bazy.' : 'Ta baza jest pusta.'); return showPicker(); }
+    Object.assign(state, { db: name, words: data.words, current: null, last: null, ok: 0, bad: 0 });
+    $('dbname').textContent = name;
+    $('cnt-ok').textContent = 0; $('cnt-bad').textContent = 0;
+    $('pick').classList.add('hidden');
+    $('learn').classList.remove('hidden');
+    window.scrollTo(0, 0);
+    nextWord();
+  }
+
+  // Waga rośnie z liczbą pomyłek i maleje, gdy słowo zaczyna wchodzić do głowy.
+  const weight = w => 1 + 3 * w.wrong / (1 + w.correct);
+
+  function pickWord() {
+    const pool = state.words.length > 1 ? state.words.filter(w => w !== state.last) : state.words;
+    const total = pool.reduce((s, w) => s + weight(w), 0);
+    let r = Math.random() * total;
+    for (const w of pool) { r -= weight(w); if (r <= 0) return w; }
+    return pool[pool.length - 1];
+  }
+
+  function nextWord() {
+    stopSpeaking();
+    state.current = pickWord();
+    state.last = state.current;
+    state.phase = 'ask';
+    state.auto = null;
+    $('word').textContent = state.current.pl;
+    $('input').value = '';
+    renderPhase();
+  }
+
+  function renderPhase() {
+    const mind = $('mind').checked;
+    const w = state.current;
+    $('ask-type').classList.toggle('hidden', state.phase !== 'ask' || mind);
+    $('ask-mind').classList.toggle('hidden', state.phase !== 'ask' || !mind);
+    $('answered').classList.toggle('hidden', state.phase !== 'answered');
+    $('wordstats').innerHTML = `<span>To słowo:</span><span>pomyłki <b>${w.wrong}</b></span><span>trafienia <b>${w.correct}</b></span>`;
+    if (state.phase === 'ask' && !mind) $('input').focus();
+    if (state.phase === 'answered') {
+      $('btn-ok').classList.toggle('active', state.auto === true);
+      $('btn-bad').classList.toggle('active', state.auto === false);
+    }
+  }
+
+  const norm = s => s.toLowerCase().replace(/\s+/g, ' ').replace(/[.!?,]+$/g, '').trim();
+  const variants = en => en.split('/').map(norm).filter(Boolean);
+
+  function check() {
+    const typed = $('input').value;
+    const ok = variants(state.current.en).includes(norm(typed));
+    state.auto = ok;
+    $('yours').textContent = typed.trim() || '—';
+    $('yours').className = 'yours ' + (ok ? 'good' : 'bad');
+    $('yours-block').classList.remove('hidden');
+    showAnswer();
+  }
+
+  function reveal() {
+    state.auto = null;
+    $('yours-block').classList.add('hidden');
+    showAnswer();
+  }
+
+  function showAnswer() {
+    $('answer').textContent = state.current.en;
+    $('ipa').textContent = state.current.ipa || '';
+    state.phase = 'answered';
+    renderPhase();
+    speak();
+  }
+
+  // ---------- wymowa ----------
+  // Nagranie ze słownika (jeśli pron.py je pobrał), w przeciwnym razie synteza mowy z przeglądarki (en-GB).
+  let player = null;
+  function speak() {
+    const w = state.current;
+    if (!w) return;
+    stopSpeaking();
+    const btn = $('speak');
+    btn.classList.add('playing');
+    const done = () => btn.classList.remove('playing');
+    if (w.audio) {
+      player = new Audio(w.audio);
+      player.onended = done;
+      player.onerror = () => { player = null; synth(w.en, done); };
+      player.play().catch(() => { player = null; synth(w.en, done); });
+    } else {
+      synth(w.en, done);
+    }
+  }
+  function stopSpeaking() {
+    if (player) { player.pause(); player = null; }
+    if ('speechSynthesis' in window) speechSynthesis.cancel();
+  }
+  let voice = null;
+  // Synteza to tylko awaryjne źródło (gdy pron.py nie pobrał nagrania). Kolejność: głosy Enhanced/Premium
+  // z macOS, głosy Google (Chrome), zwykły Daniel; głosy-zabawki (Eddy, Grandma, Rocko…) pomijamy.
+  function pickVoice() {
+    const voices = speechSynthesis.getVoices();
+    const novelty = /Eddy|Flo|Grandma|Grandpa|Reed|Rocko|Sandy|Shelley|Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Wobble|Fred|Good News|Jester|Junior|Kathy|Organ|Superstar|Ralph|Trinoids|Whisper|Zarvox/i;
+    const score = v => {
+      if (novelty.test(v.name)) return -1;
+      let s = /^en[-_]GB/i.test(v.lang) ? 100 : /^en/i.test(v.lang) ? 10 : 0;
+      if (!s) return 0;
+      if (/Enhanced|Premium|Natural|Neural/i.test(v.name)) s += 50;
+      else if (/Google/i.test(v.name)) s += 40;
+      else if (/Daniel|Serena|Kate|Oliver|Arthur/i.test(v.name)) s += 20;
+      return s;
+    };
+    voice = voices.filter(v => score(v) > 0).sort((a, b) => score(b) - score(a))[0] || null;
+  }
+  function synth(text, done) {
+    if (!('speechSynthesis' in window)) return done();
+    if (!voice) pickVoice();
+    const u = new SpeechSynthesisUtterance(text.split('/')[0].trim());
+    u.lang = 'en-GB';
+    if (voice) u.voice = voice;
+    u.rate = 0.9;
+    u.onend = done; u.onerror = done;
+    speechSynthesis.speak(u);
+  }
+  if ('speechSynthesis' in window) speechSynthesis.onvoiceschanged = pickVoice;
+
+  function grade(ok) {
+    if (state.phase !== 'answered') return;
+    const w = state.current;
+    if (ok) { state.ok++; w.correct++; } else { state.bad++; w.wrong++; }
+    $('cnt-ok').textContent = state.ok;
+    $('cnt-bad').textContent = state.bad;
+    api(`/api/db/${encodeURIComponent(state.db)}/answer`, { pl: w.pl, en: w.en, ok });
+    nextWord();
+  }
+
+  // ---------- zdarzenia ----------
+  $('back').onclick = () => { stopSpeaking(); history.replaceState(null, '', ' '); showPicker(); };
+  $('mind').onchange = () => { if (state.phase === 'ask') renderPhase(); };
+  $('check').onclick = check;
+  $('reveal').onclick = reveal;
+  $('btn-ok').onclick = () => grade(true);
+  $('btn-bad').onclick = () => grade(false);
+  $('speak').onclick = speak;
+
+  // przełączniki pamiętane między sesjami
+  for (const id of ['mind']) {
+    try { $(id).checked = localStorage.getItem('memorize.' + id) === '1'; } catch (e) {}
+    $(id).addEventListener('change', () => { try { localStorage.setItem('memorize.' + id, $(id).checked ? '1' : '0'); } catch (e) {} });
+  }
+
+  document.addEventListener('keydown', e => {
+    if ($('learn').classList.contains('hidden')) return;
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (state.phase === 'ask') ($('mind').checked ? reveal() : check());
+      else grade(state.auto === null ? true : state.auto);
+    } else if (state.phase === 'answered' && (e.key === 'n' || e.key === 'N')) {
+      e.preventDefault();
+      grade(false);
+    } else if (state.phase === 'answered' && (e.key === 'p' || e.key === 'P')) {
+      e.preventDefault();
+      speak();
+    }
+  });
+
+  const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const plural = n => n === 1 ? 'słówko' : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 'słówka' : 'słówek';
+
+  // Otwarcie z #nazwa-bazy od razu zaczyna naukę.
+  const initial = decodeURIComponent(location.hash.slice(1));
+  initial ? startSession(initial).then(() => history.replaceState(null, '', ' ')) : showPicker();
+})();
+</script>
+</body>
+</html>

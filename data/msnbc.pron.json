@@ -1,0 +1,833 @@
+{
+ "I didn't have that on my bingo card": {
+  "audio": "audio/tts/i-didn-t-have-that-on-my-bingo-card.mp3",
+  "tts": true
+ },
+ "a DC insider": {
+  "audio": "audio/tts/a-dc-insider.mp3",
+  "tts": true
+ },
+ "a barrage of missiles": {
+  "audio": "audio/tts/a-barrage-of-missiles.mp3",
+  "tts": true
+ },
+ "a bunker": {
+  "audio": "audio/bunker.mp3",
+  "ipa": "/ˈbʌŋ.kə/",
+  "word": "bunker"
+ },
+ "a catastrophic mishap": {
+  "audio": "audio/tts/a-catastrophic-mishap.mp3",
+  "tts": true
+ },
+ "a combat veteran": {
+  "audio": "audio/tts/a-combat-veteran.mp3",
+  "tts": true
+ },
+ "a combat zone": {
+  "audio": "audio/tts/a-combat-zone.mp3",
+  "tts": true
+ },
+ "a compelling case": {
+  "audio": "audio/tts/a-compelling-case.mp3",
+  "tts": true
+ },
+ "a constant influx": {
+  "audio": "audio/tts/a-constant-influx.mp3",
+  "tts": true
+ },
+ "a cover-up": {
+  "audio": "audio/cover-up.mp3",
+  "ipa": "/ˈkʌvɚˌʌp/",
+  "word": "cover-up"
+ },
+ "a cult of personality": {
+  "audio": "audio/tts/a-cult-of-personality.mp3",
+  "tts": true
+ },
+ "a deciding issue": {
+  "audio": "audio/tts/a-deciding-issue.mp3",
+  "tts": true
+ },
+ "a deep red state": {
+  "audio": "audio/tts/a-deep-red-state.mp3",
+  "tts": true
+ },
+ "a deployment": {
+  "audio": "audio/deployment.mp3",
+  "ipa": "/dɪˈplɔɪmənt/",
+  "word": "deployment"
+ },
+ "a giant tax cut": {
+  "audio": "audio/tts/a-giant-tax-cut.mp3",
+  "tts": true
+ },
+ "a groundswell of support": {
+  "audio": "audio/tts/a-groundswell-of-support.mp3",
+  "tts": true
+ },
+ "a hearing": {
+  "audio": "audio/hearing.mp3",
+  "ipa": "/ˈhɪə.ɹɪŋ/",
+  "word": "hearing"
+ },
+ "a lack of leadership": {
+  "audio": "audio/tts/a-lack-of-leadership.mp3",
+  "tts": true
+ },
+ "a leading question": {
+  "audio": "audio/tts/a-leading-question.mp3",
+  "tts": true
+ },
+ "a liability": {
+  "audio": "audio/liability.mp3",
+  "ipa": "/laɪəˈbɪlɪti/",
+  "word": "liability"
+ },
+ "a little late to pretend": {
+  "audio": "audio/tts/a-little-late-to-pretend.mp3",
+  "tts": true
+ },
+ "a mission statement": {
+  "audio": "audio/tts/a-mission-statement.mp3",
+  "tts": true
+ },
+ "a part-time work schedule": {
+  "audio": "audio/tts/a-part-time-work-schedule.mp3",
+  "tts": true
+ },
+ "a poll": {
+  "audio": "audio/poll.mp3",
+  "ipa": "/pəʊl/",
+  "word": "poll"
+ },
+ "a predicate": {
+  "audio": "audio/predicate.mp3",
+  "ipa": "/ˈpɹɛd.ɪ.kət/",
+  "word": "predicate"
+ },
+ "a properly predicated investigation": {
+  "audio": "audio/tts/a-properly-predicated-investigation.mp3",
+  "tts": true
+ },
+ "a referendum on something": {
+  "audio": "audio/tts/a-referendum-on-something.mp3",
+  "tts": true
+ },
+ "a routine six-week deployment": {
+  "audio": "audio/tts/a-routine-six-week-deployment.mp3",
+  "tts": true
+ },
+ "a ruby red state": {
+  "audio": "audio/tts/a-ruby-red-state.mp3",
+  "tts": true
+ },
+ "a service member": {
+  "audio": "audio/tts/a-service-member.mp3",
+  "tts": true
+ },
+ "a snapshot in time": {
+  "audio": "audio/tts/a-snapshot-in-time.mp3",
+  "tts": true
+ },
+ "a statewide race": {
+  "audio": "audio/tts/a-statewide-race.mp3",
+  "tts": true
+ },
+ "a strategic goal": {
+  "audio": "audio/tts/a-strategic-goal.mp3",
+  "tts": true
+ },
+ "a technocratic job": {
+  "audio": "audio/tts/a-technocratic-job.mp3",
+  "tts": true
+ },
+ "a unifying moment": {
+  "audio": "audio/tts/a-unifying-moment.mp3",
+  "tts": true
+ },
+ "a war of choice": {
+  "audio": "audio/tts/a-war-of-choice.mp3",
+  "tts": true
+ },
+ "a wave year": {
+  "audio": "audio/tts/a-wave-year.mp3",
+  "tts": true
+ },
+ "a weekday": {
+  "audio": "audio/weekday.mp3",
+  "ipa": "/ˈwiːkdeɪ̯/",
+  "word": "weekday"
+ },
+ "an affordability crisis": {
+  "audio": "audio/tts/an-affordability-crisis.mp3",
+  "tts": true
+ },
+ "an alumnus": {
+  "audio": "audio/alumnus.mp3",
+  "ipa": "/əˈlʌmnəs/",
+  "word": "alumnus"
+ },
+ "an existential crisis": {
+  "audio": "audio/tts/an-existential-crisis.mp3",
+  "tts": true
+ },
+ "an imminent threat": {
+  "audio": "audio/tts/an-imminent-threat.mp3",
+  "tts": true
+ },
+ "an incumbent": {
+  "audio": "audio/incumbent.mp3",
+  "ipa": "/ɪnˈkʌmb(ə)nt/",
+  "word": "incumbent"
+ },
+ "an interceptor": {
+  "audio": "audio/interceptor.mp3",
+  "ipa": "/ˈɪn.təɹˌsɛp.təɹ/",
+  "word": "interceptor"
+ },
+ "an outsider": {
+  "audio": "audio/outsider.mp3",
+  "ipa": "/ˌaʊtˈsaɪdəɹ/",
+  "word": "outsider"
+ },
+ "an uphill climb": {
+  "audio": "audio/tts/an-uphill-climb.mp3",
+  "tts": true
+ },
+ "another total lie": {
+  "audio": "audio/tts/another-total-lie.mp3",
+  "tts": true
+ },
+ "as you outlined": {
+  "audio": "audio/tts/as-you-outlined.mp3",
+  "tts": true
+ },
+ "at complete odds with": {
+  "audio": "audio/tts/at-complete-odds-with.mp3",
+  "tts": true
+ },
+ "at every turn": {
+  "audio": "audio/tts/at-every-turn.mp3",
+  "tts": true
+ },
+ "at one point": {
+  "audio": "audio/tts/at-one-point.mp3",
+  "tts": true
+ },
+ "at this point": {
+  "audio": "audio/tts/at-this-point.mp3",
+  "tts": true
+ },
+ "barracks": {
+  "audio": "audio/barracks.mp3",
+  "ipa": "/ˈbæɹəks/",
+  "word": "barracks"
+ },
+ "bigoted": {
+  "audio": "audio/bigoted.mp3",
+  "ipa": "/ˈbɪɡətɪd/",
+  "word": "bigoted"
+ },
+ "bizarrely": {
+  "audio": "audio/bizarre.mp3",
+  "base": "bizarre",
+  "ipa": "/bɪˈzɑː(ɹ)/",
+  "word": "bizarre"
+ },
+ "blast pressure": {
+  "audio": "audio/tts/blast-pressure.mp3",
+  "tts": true
+ },
+ "bone spurs": {
+  "audio": "audio/tts/bone-spurs.mp3",
+  "tts": true
+ },
+ "classified": {
+  "audio": "audio/classified.mp3",
+  "ipa": "/ˈklæsəfaɪd/",
+  "word": "classified"
+ },
+ "commander-in-chief": {
+  "audio": "audio/commander-in-chief.mp3",
+  "word": "commander-in-chief"
+ },
+ "consistent with the president's agenda": {
+  "audio": "audio/tts/consistent-with-the-president-s-agenda.mp3",
+  "tts": true
+ },
+ "daily chaos": {
+  "audio": "audio/tts/daily-chaos.mp3",
+  "tts": true
+ },
+ "deeply uncomfortable": {
+  "audio": "audio/tts/deeply-uncomfortable.mp3",
+  "tts": true
+ },
+ "deployed": {
+  "audio": "audio/deploy.mp3",
+  "base": "deploy",
+  "ipa": "/dɪˈplɔɪ/",
+  "word": "deploy"
+ },
+ "discovery": {
+  "audio": "audio/discovery.mp3",
+  "ipa": "/dɪˈskʌv.ɹi/",
+  "word": "discovery"
+ },
+ "drilling permits": {
+  "audio": "audio/tts/drilling-permits.mp3",
+  "tts": true
+ },
+ "eager to depart": {
+  "audio": "audio/tts/eager-to-depart.mp3",
+  "tts": true
+ },
+ "excessive drinking on the job": {
+  "audio": "audio/tts/excessive-drinking-on-the-job.mp3",
+  "tts": true
+ },
+ "expenditure": {
+  "audio": "audio/expenditure.mp3",
+  "ipa": "/ɛkˈspɛndɪt͡ʃə/",
+  "word": "expenditure"
+ },
+ "extended repeatedly": {
+  "audio": "audio/tts/extended-repeatedly.mp3",
+  "tts": true
+ },
+ "first of all": {
+  "audio": "audio/tts/first-of-all.mp3",
+  "tts": true
+ },
+ "for a number of reasons": {
+  "audio": "audio/tts/for-a-number-of-reasons.mp3",
+  "tts": true
+ },
+ "for most of his adult life": {
+  "audio": "audio/tts/for-most-of-his-adult-life.mp3",
+  "tts": true
+ },
+ "for what?": {
+  "audio": "audio/tts/for-what.mp3",
+  "tts": true
+ },
+ "give me a break": {
+  "audio": "audio/tts/give-me-a-break.mp3",
+  "tts": true
+ },
+ "he's everything to me": {
+  "audio": "audio/tts/he-s-everything-to-me.mp3",
+  "tts": true
+ },
+ "he's out of time": {
+  "audio": "audio/tts/he-s-out-of-time.mp3",
+  "tts": true
+ },
+ "hellish conditions": {
+  "audio": "audio/tts/hellish-conditions.mp3",
+  "tts": true
+ },
+ "hire the engineer to do the job right": {
+  "audio": "audio/tts/hire-the-engineer-to-do-the-job-right.mp3",
+  "tts": true
+ },
+ "impeccable grooming standards": {
+  "audio": "audio/tts/impeccable-grooming-standards.mp3",
+  "tts": true
+ },
+ "in case you're counting": {
+  "audio": "audio/tts/in-case-you-re-counting.mp3",
+  "tts": true
+ },
+ "in the closing weeks of an election": {
+  "audio": "audio/tts/in-the-closing-weeks-of-an-election.mp3",
+  "tts": true
+ },
+ "in whole or in part": {
+  "audio": "audio/tts/in-whole-or-in-part.mp3",
+  "tts": true
+ },
+ "incoming missile fire": {
+  "audio": "audio/tts/incoming-missile-fire.mp3",
+  "tts": true
+ },
+ "institutional knowledge": {
+  "audio": "audio/tts/institutional-knowledge.mp3",
+  "tts": true
+ },
+ "it doesn't affect him": {
+  "audio": "audio/tts/it-doesn-t-affect-him.mp3",
+  "tts": true
+ },
+ "it doesn't pass the smell test": {
+  "audio": "audio/tts/it-doesn-t-pass-the-smell-test.mp3",
+  "tts": true
+ },
+ "it's an inexpensive price to pay for": {
+  "audio": "audio/tts/it-s-an-inexpensive-price-to-pay-for.mp3",
+  "tts": true
+ },
+ "it's kind of a shame": {
+  "audio": "audio/tts/it-s-kind-of-a-shame.mp3",
+  "tts": true
+ },
+ "it's not a big deal to him": {
+  "audio": "audio/tts/it-s-not-a-big-deal-to-him.mp3",
+  "tts": true
+ },
+ "joining me now is": {
+  "audio": "audio/tts/joining-me-now-is.mp3",
+  "tts": true
+ },
+ "let's be honest": {
+  "audio": "audio/tts/let-s-be-honest.mp3",
+  "tts": true
+ },
+ "livelihoods": {
+  "audio": "audio/livelihood.mp3",
+  "base": "livelihood",
+  "ipa": "/ˈlaɪvlihʊd/",
+  "word": "livelihood"
+ },
+ "major damage": {
+  "audio": "audio/tts/major-damage.mp3",
+  "tts": true
+ },
+ "missing in action": {
+  "audio": "audio/tts/missing-in-action.mp3",
+  "tts": true
+ },
+ "my worry is that": {
+  "audio": "audio/tts/my-worry-is-that.mp3",
+  "tts": true
+ },
+ "my youngest son": {
+  "audio": "audio/tts/my-youngest-son.mp3",
+  "tts": true
+ },
+ "nice imagery": {
+  "audio": "audio/tts/nice-imagery.mp3",
+  "tts": true
+ },
+ "not getting as much attention as it should": {
+  "audio": "audio/tts/not-getting-as-much-attention-as-it-should.mp3",
+  "tts": true
+ },
+ "not the least of which being that": {
+  "audio": "audio/tts/not-the-least-of-which-being-that.mp3",
+  "tts": true
+ },
+ "one to watch": {
+  "audio": "audio/tts/one-to-watch.mp3",
+  "tts": true
+ },
+ "oversight responsibility": {
+  "audio": "audio/tts/oversight-responsibility.mp3",
+  "tts": true
+ },
+ "people can't afford their lives": {
+  "audio": "audio/tts/people-can-t-afford-their-lives.mp3",
+  "tts": true
+ },
+ "perjury": {
+  "audio": "audio/perjury.mp3",
+  "ipa": "/ˈpɜː(ɹ)d͡ʒəɹi/",
+  "word": "perjury"
+ },
+ "put that on a bumper sticker": {
+  "audio": "audio/tts/put-that-on-a-bumper-sticker.mp3",
+  "tts": true
+ },
+ "rations": {
+  "audio": "audio/rations.mp3",
+  "word": "rations"
+ },
+ "regime change": {
+  "audio": "audio/tts/regime-change.mp3",
+  "tts": true
+ },
+ "self-aggrandizing": {
+  "audio": "audio/tts/self-aggrandizing.mp3",
+  "tts": true
+ },
+ "sitting ducks": {
+  "audio": "audio/tts/sitting-ducks.mp3",
+  "tts": true
+ },
+ "small potatoes": {
+  "audio": "audio/tts/small-potatoes.mp3",
+  "tts": true
+ },
+ "small-dollar grassroots contributions": {
+  "audio": "audio/tts/small-dollar-grassroots-contributions.mp3",
+  "tts": true
+ },
+ "standard fare": {
+  "audio": "audio/tts/standard-fare.mp3",
+  "tts": true
+ },
+ "sustainability": {
+  "audio": "audio/sustainability.mp3",
+  "ipa": "/səˌsteɪnəˈbɪlɪti/",
+  "word": "sustainability"
+ },
+ "thank you as always": {
+  "audio": "audio/tts/thank-you-as-always.mp3",
+  "tts": true
+ },
+ "that's just the tip of the iceberg": {
+  "audio": "audio/tts/that-s-just-the-tip-of-the-iceberg.mp3",
+  "tts": true
+ },
+ "the Armed Services Committee": {
+  "audio": "audio/tts/the-armed-services-committee.mp3",
+  "tts": true
+ },
+ "the Intelligence Committee": {
+  "audio": "audio/tts/the-intelligence-committee.mp3",
+  "tts": true
+ },
+ "the inspector general": {
+  "audio": "audio/tts/the-inspector-general.mp3",
+  "tts": true
+ },
+ "the margin of error": {
+  "audio": "audio/tts/the-margin-of-error.mp3",
+  "tts": true
+ },
+ "the most consequential": {
+  "audio": "audio/tts/the-most-consequential.mp3",
+  "tts": true
+ },
+ "the people at the top making decisions": {
+  "audio": "audio/tts/the-people-at-the-top-making-decisions.mp3",
+  "tts": true
+ },
+ "the straw that broke the camel's back": {
+  "audio": "audio/tts/the-straw-that-broke-the-camel-s-back.mp3",
+  "tts": true
+ },
+ "tied": {
+  "audio": "audio/tied.mp3",
+  "ipa": "[tʰaːd]",
+  "word": "tied"
+ },
+ "to abuse one's powers": {
+  "audio": "audio/tts/to-abuse-one-s-powers.mp3",
+  "tts": true
+ },
+ "to avoid service": {
+  "audio": "audio/tts/to-avoid-service.mp3",
+  "tts": true
+ },
+ "to be on the record": {
+  "audio": "audio/tts/to-be-on-the-record.mp3",
+  "tts": true
+ },
+ "to be stuck in a conflict": {
+  "audio": "audio/tts/to-be-stuck-in-a-conflict.mp3",
+  "tts": true
+ },
+ "to brief the press": {
+  "audio": "audio/tts/to-brief-the-press.mp3",
+  "tts": true
+ },
+ "to cancel a vote": {
+  "audio": "audio/tts/to-cancel-a-vote.mp3",
+  "tts": true
+ },
+ "to claim it's all under control": {
+  "audio": "audio/tts/to-claim-it-s-all-under-control.mp3",
+  "tts": true
+ },
+ "to clean house": {
+  "audio": "audio/tts/to-clean-house.mp3",
+  "tts": true
+ },
+ "to come tumbling down": {
+  "audio": "audio/tts/to-come-tumbling-down.mp3",
+  "tts": true
+ },
+ "to cut a few pounds": {
+  "audio": "audio/tts/to-cut-a-few-pounds.mp3",
+  "tts": true
+ },
+ "to cut the session short": {
+  "audio": "audio/tts/to-cut-the-session-short.mp3",
+  "tts": true
+ },
+ "to declare independence": {
+  "audio": "audio/tts/to-declare-independence.mp3",
+  "tts": true
+ },
+ "to denaturalize": {
+  "audio": "audio/denaturalize.mp3",
+  "ipa": "/diːˈnæt(jə)ɹəlaɪz/",
+  "word": "denaturalize"
+ },
+ "to deport": {
+  "audio": "audio/deport.mp3",
+  "ipa": "/dɪˈpɔːt/",
+  "word": "deport"
+ },
+ "to displace": {
+  "audio": "audio/displace.mp3",
+  "ipa": "/dɪsˈpleɪs/",
+  "word": "displace"
+ },
+ "to double down": {
+  "audio": "audio/tts/to-double-down.mp3",
+  "tts": true
+ },
+ "to downplay": {
+  "audio": "audio/downplay.mp3",
+  "ipa": "/ˈdaʊ̯nˌpleɪ̯/",
+  "word": "downplay"
+ },
+ "to drive voters out": {
+  "audio": "audio/tts/to-drive-voters-out.mp3",
+  "tts": true
+ },
+ "to dwindle": {
+  "audio": "audio/dwindle.mp3",
+  "ipa": "/ˈdwɪn.dəl/",
+  "word": "dwindle"
+ },
+ "to endorse": {
+  "audio": "audio/endorse.mp3",
+  "ipa": "/ɪnˈdɔːs/",
+  "word": "endorse"
+ },
+ "to fill up your tank": {
+  "audio": "audio/tts/to-fill-up-your-tank.mp3",
+  "tts": true
+ },
+ "to flail": {
+  "audio": "audio/flail.mp3",
+  "ipa": "/fleɪl/",
+  "word": "flail"
+ },
+ "to fly in the face of": {
+  "audio": "audio/tts/to-fly-in-the-face-of.mp3",
+  "tts": true
+ },
+ "to get across one main point": {
+  "audio": "audio/tts/to-get-across-one-main-point.mp3",
+  "tts": true
+ },
+ "to have a hell of a week": {
+  "audio": "audio/tts/to-have-a-hell-of-a-week.mp3",
+  "tts": true
+ },
+ "to have a pretty solid theory": {
+  "audio": "audio/tts/to-have-a-pretty-solid-theory.mp3",
+  "tts": true
+ },
+ "to have no idea when": {
+  "audio": "audio/tts/to-have-no-idea-when.mp3",
+  "tts": true
+ },
+ "to have some choice words for someone": {
+  "audio": "audio/tts/to-have-some-choice-words-for-someone.mp3",
+  "tts": true
+ },
+ "to have to answer for something": {
+  "audio": "audio/tts/to-have-to-answer-for-something.mp3",
+  "tts": true
+ },
+ "to hold someone accountable": {
+  "audio": "audio/tts/to-hold-someone-accountable.mp3",
+  "tts": true
+ },
+ "to hold someone to that": {
+  "audio": "audio/tts/to-hold-someone-to-that.mp3",
+  "tts": true
+ },
+ "to hope he doesn't get caught": {
+  "audio": "audio/tts/to-hope-he-doesn-t-get-caught.mp3",
+  "tts": true
+ },
+ "to introduce articles of impeachment": {
+  "audio": "audio/tts/to-introduce-articles-of-impeachment.mp3",
+  "tts": true
+ },
+ "to keep something from the public eye": {
+  "audio": "audio/tts/to-keep-something-from-the-public-eye.mp3",
+  "tts": true
+ },
+ "to kick someone off health care": {
+  "audio": "audio/tts/to-kick-someone-off-health-care.mp3",
+  "tts": true
+ },
+ "to lead by two points": {
+  "audio": "audio/tts/to-lead-by-two-points.mp3",
+  "tts": true
+ },
+ "to lie to Congress": {
+  "audio": "audio/tts/to-lie-to-congress.mp3",
+  "tts": true
+ },
+ "to lower your power bills": {
+  "audio": "audio/tts/to-lower-your-power-bills.mp3",
+  "tts": true
+ },
+ "to own up to something": {
+  "audio": "audio/tts/to-own-up-to-something.mp3",
+  "tts": true
+ },
+ "to parrot": {
+  "audio": "audio/parrot.mp3",
+  "ipa": "/ˈpæɹət/",
+  "word": "parrot"
+ },
+ "to pin someone down": {
+  "audio": "audio/tts/to-pin-someone-down.mp3",
+  "tts": true
+ },
+ "to pitch in": {
+  "audio": "audio/tts/to-pitch-in.mp3",
+  "tts": true
+ },
+ "to pray about someone every night": {
+  "audio": "audio/tts/to-pray-about-someone-every-night.mp3",
+  "tts": true
+ },
+ "to preserve records": {
+  "audio": "audio/tts/to-preserve-records.mp3",
+  "tts": true
+ },
+ "to press someone about something": {
+  "audio": "audio/tts/to-press-someone-about-something.mp3",
+  "tts": true
+ },
+ "to put it generously": {
+  "audio": "audio/tts/to-put-it-generously.mp3",
+  "tts": true
+ },
+ "to query a database": {
+  "audio": "audio/tts/to-query-a-database.mp3",
+  "tts": true
+ },
+ "to rack up": {
+  "audio": "audio/tts/to-rack-up.mp3",
+  "tts": true
+ },
+ "to regulate": {
+  "audio": "audio/regulate.mp3",
+  "ipa": "/ˈɹɛɡ.jʊ.leɪt/",
+  "word": "regulate"
+ },
+ "to run away from someone": {
+  "audio": "audio/tts/to-run-away-from-someone.mp3",
+  "tts": true
+ },
+ "to secretly bring someone in": {
+  "audio": "audio/tts/to-secretly-bring-someone-in.mp3",
+  "tts": true
+ },
+ "to sell out": {
+  "audio": "audio/tts/to-sell-out.mp3",
+  "tts": true
+ },
+ "to send everyone home early": {
+  "audio": "audio/tts/to-send-everyone-home-early.mp3",
+  "tts": true
+ },
+ "to sink the navy": {
+  "audio": "audio/tts/to-sink-the-navy.mp3",
+  "tts": true
+ },
+ "to skip town": {
+  "audio": "audio/tts/to-skip-town.mp3",
+  "tts": true
+ },
+ "to speak truth to power": {
+  "audio": "audio/tts/to-speak-truth-to-power.mp3",
+  "tts": true
+ },
+ "to state the obvious": {
+  "audio": "audio/tts/to-state-the-obvious.mp3",
+  "tts": true
+ },
+ "to stick with someone": {
+  "audio": "audio/tts/to-stick-with-someone.mp3",
+  "tts": true
+ },
+ "to subvert the Constitution": {
+  "audio": "audio/tts/to-subvert-the-constitution.mp3",
+  "tts": true
+ },
+ "to sue": {
+  "audio": "audio/sue.mp3",
+  "ipa": "/sjuː/",
+  "word": "sue"
+ },
+ "to suppress": {
+  "audio": "audio/suppress.mp3",
+  "ipa": "/səˈpɹɛs/",
+  "word": "suppress"
+ },
+ "to sustain damage": {
+  "audio": "audio/tts/to-sustain-damage.mp3",
+  "tts": true
+ },
+ "to take a toll on someone": {
+  "audio": "audio/tts/to-take-a-toll-on-someone.mp3",
+  "tts": true
+ },
+ "to testify": {
+  "audio": "audio/testify.mp3",
+  "ipa": "/ˈtɛstɪfaɪ/",
+  "word": "testify"
+ },
+ "to throw the game": {
+  "audio": "audio/tts/to-throw-the-game.mp3",
+  "tts": true
+ },
+ "toxic": {
+  "audio": "audio/toxic.mp3",
+  "ipa": "/ˈtɒk.sɪk/",
+  "word": "toxic"
+ },
+ "under normal circumstances": {
+  "audio": "audio/tts/under-normal-circumstances.mp3",
+  "tts": true
+ },
+ "waist-to-height requirements": {
+  "audio": "audio/tts/waist-to-height-requirements.mp3",
+  "tts": true
+ },
+ "we have less than a minute left": {
+  "audio": "audio/tts/we-have-less-than-a-minute-left.mp3",
+  "tts": true
+ },
+ "we watch these speeches so other people don't have to": {
+  "audio": "audio/tts/we-watch-these-speeches-so-other-people-don-t-have-to.mp3",
+  "tts": true
+ },
+ "we're standing there with our eyes closed, getting punched in the face": {
+  "audio": "audio/tts/we-re-standing-there-with-our-eyes-closed-getting-punched-in-the-face.mp3",
+  "tts": true
+ },
+ "where's your head at on this": {
+  "audio": "audio/tts/where-s-your-head-at-on-this.mp3",
+  "tts": true
+ },
+ "which is wild for a whole lot of reasons": {
+  "audio": "audio/tts/which-is-wild-for-a-whole-lot-of-reasons.mp3",
+  "tts": true
+ },
+ "wrongful termination": {
+  "audio": "audio/tts/wrongful-termination.mp3",
+  "tts": true
+ },
+ "you can't really blame them": {
+  "audio": "audio/tts/you-can-t-really-blame-them.mp3",
+  "tts": true
+ },
+ "you damn well better...": {
+  "audio": "audio/tts/you-damn-well-better.mp3",
+  "tts": true
+ }
+}

@@ -1,0 +1,207 @@
+# Baza: msnbc — słówka i sformułowania z transkrypcji programów MSNBC / MS NOW
+# Format: po polsku ; in English   (kilka poprawnych wersji rozdziel ukośnikiem)
+#
+# ===== 2026-09-21: Massie vs Hegseth, bazy na Bliskim Wschodzie, sondaże Kansas/Floryda, Rove/Rosenthal, Schiff/Patel =====
+
+# --- Kongres, polityka, wybory ---
+dzień roboczy ; a weekday
+w razie gdybyś liczył ; in case you're counting
+mówiąc łagodnie, przy dużej dozie życzliwości ; to put it generously
+niepełny etat, praca na pół gwizdka ; a part-time work schedule
+skrócić sesję (np. legislacyjną) ; to cut the session short
+odwołać głosowanie ; to cancel a vote
+wysłać wszystkich wcześniej do domu ; to send everyone home early
+zwiać z miasta, ulotnić się ; to skip town
+być zaprotokołowanym, oficjalnie zająć stanowisko ; to be on the record
+musieć się z czegoś tłumaczyć, odpowiadać za coś ; to have to answer for something
+wnieść artykuły impeachmentu ; to introduce articles of impeachment
+przekonujące argumenty (w jakiejś sprawie) ; a compelling case
+podważać konstytucję ; to subvert the Constitution
+nadużywać swoich uprawnień ; to abuse one's powers
+zgromadzić, uzbierać (np. długi, wykroczenia) ; to rack up
+daj spokój! ; give me a break
+mieć do kogoś kilka dosadnych słów ; to have some choice words for someone
+mieć całkiem solidną teorię ; to have a pretty solid theory
+nie można ich winić ; you can't really blame them
+to trochę szkoda ; it's kind of a shame
+z wielu powodów ; for a number of reasons
+poprzeć (kandydata), udzielić poparcia ; to endorse
+urzędujący (polityk ubiegający się o reelekcję) ; an incumbent
+osoba spoza establishmentu ; an outsider
+waszyngtoński insider ; a DC insider
+skrajnie republikański stan ; a ruby red state / a deep red state
+sondaż ; a poll
+margines błędu ; the margin of error
+migawka, obraz chwili (o sondażu) ; a snapshot in time
+remis (w sondażu) ; tied
+prowadzić o dwa punkty ; to lead by two points
+plebiscyt, referendum w sprawie ; a referendum on something
+rok fali (wyborczej) ; a wave year
+wybory stanowe (na poziomie całego stanu) ; a statewide race
+warte obserwowania ; one to watch
+gdzie masz głowę w tej sprawie, co o tym myślisz ; where's your head at on this
+kwestia decydująca ; a deciding issue
+nie dostawać tyle uwagi, na ile zasługuje ; not getting as much attention as it should
+toksyczny (politycznie) ; toxic
+odcinać się od kogoś, uciekać od kogoś ; to run away from someone
+kult jednostki ; a cult of personality
+papugować, bezmyślnie powtarzać ; to parrot
+balast, obciążenie (polityczne) ; a liability
+ogłosić niezależność ; to declare independence
+w końcowych tygodniach kampanii ; in the closing weeks of an election
+trochę za późno, żeby udawać ; a little late to pretend
+kryzys drożyzny, kryzys dostępności cenowej ; an affordability crisis
+ludzi nie stać na życie ; people can't afford their lives
+odebrać komuś ubezpieczenie zdrowotne ; to kick someone off health care
+gigantyczna ulga podatkowa ; a giant tax cut
+przyciągnąć wyborców do urn ; to drive voters out
+poddać mecz, celowo przegrywać ; to throw the game
+zaprzedać się (np. wielkim firmom technologicznym) ; to sell out
+regulować (prawnie) ; to regulate
+kryzys egzystencjalny ; an existential crisis
+środki do życia ; livelihoods
+kropla, która przelała czarę ; the straw that broke the camel's back
+stwierdzić oczywistość ; to state the obvious
+bigoteryjny, pełen uprzedzeń ; bigoted
+pozbawić obywatelstwa ; to denaturalize
+deportować ; to deport
+wypierać, wysiedlać ; to displace
+to się nadaje na naklejkę na zderzak (chwytliwe hasło) ; put that on a bumper sticker
+absolwent uczelni ; an alumnus
+standardowa rzecz, chleb powszedni ; standard fare
+jednoczący moment ; a unifying moment
+nie miałem tego w planach, nie spodziewałem się (potocznie) ; I didn't have that on my bingo card
+lawina poparcia, oddolne wsparcie ; a groundswell of support
+drobne datki oddolne ; small-dollar grassroots contributions
+dorzucić się, pomóc ; to pitch in
+mozolna wspinaczka, ciężka przeprawa ; an uphill climb
+techniczne, fachowe stanowisko ; a technocratic job
+pozwolenia na odwierty ; drilling permits
+najbardziej istotny, brzemienny w skutki ; the most consequential
+zatrudnij inżyniera, żeby zrobił to porządnie ; hire the engineer to do the job right
+obniżyć rachunki za prąd ; to lower your power bills
+mieć piekielny tydzień ; to have a hell of a week
+przede wszystkim ; first of all
+robić czystkę kadrową ; to clean house
+posiedzenie, przesłuchanie (w Kongresie) ; a hearing
+naciskać kogoś w jakiejś sprawie ; to press someone about something
+obowiązek nadzoru ; oversight responsibility
+zeznawać ; to testify
+sugerujące pytanie ; a leading question
+podwoić stawkę, uparcie obstawać przy swoim ; to double down
+dziwacznie ; bizarrely
+zgodny z agendą prezydenta ; consistent with the president's agenda
+bezprawne zwolnienie z pracy ; wrongful termination
+pozwać ; to sue
+postępowanie dowodowe (w procesie) ; discovery
+przesłanka (do wszczęcia śledztwa) ; a predicate
+właściwie uzasadnione śledztwo ; a properly predicated investigation
+przeszukać bazę danych ; to query a database
+to nie trzyma się kupy, nie przechodzi testu wiarygodności ; it doesn't pass the smell test
+lepiej, żebyś... (z groźbą) ; you damn well better...
+trzymać kogoś za słowo ; to hold someone to that
+pociągnąć kogoś do odpowiedzialności ; to hold someone accountable
+przyprzeć kogoś do muru, wymusić konkretną odpowiedź ; to pin someone down
+zachować dokumenty ; to preserve records
+krzywoprzysięstwo ; perjury
+kłamać przed Kongresem ; to lie to Congress
+liczyć, że nie zostanie się przyłapanym ; to hope he doesn't get caught
+w całości lub w części ; in whole or in part
+zaginiony w akcji, nieobecny ; missing in action
+kolejne totalne kłamstwo ; another total lie
+skończył mu się czas ; he's out of time
+wyraźnie skrępowany ; deeply uncomfortable
+rwący się do wyjścia ; eager to depart
+stać w sprzeczności z ; to fly in the face of
+przekazać jedną główną myśl ; to get across one main point
+nadmierne picie w pracy ; excessive drinking on the job
+mówić prawdę władzy, nie bać się mówić prawdy przełożonym ; to speak truth to power
+
+# --- Wojsko, wojna, Pentagon ---
+żołnierz, członek sił zbrojnych ; a service member
+rozmieszczony (o żołnierzu) ; deployed
+misja, rozmieszczenie wojsk ; a deployment
+rutynowa sześciotygodniowa misja ; a routine six-week deployment
+w kółko przedłużane (rozkazy) ; extended repeatedly
+koszary ; barracks
+schron ; a bunker
+racje żywnościowe ; rations
+pocisk przechwytujący ; an interceptor
+grad pocisków ; a barrage of missiles
+nadchodzący ostrzał rakietowy ; incoming missile fire
+kurczyć się (o zapasach) ; to dwindle
+zużycie, wydatkowanie ; expenditure
+łatwy cel, bezbronny (o żołnierzach) ; sitting ducks
+stoimy z zamkniętymi oczami i dostajemy po twarzy ; we're standing there with our eyes closed, getting punched in the face
+odnieść uszkodzenia ; to sustain damage
+poważne uszkodzenia ; major damage
+strefa działań wojennych ; a combat zone
+weteran walk ; a combat veteran
+głównodowodzący ; commander-in-chief
+wymagania co do stosunku talii do wzrostu ; waist-to-height requirements
+nienaganny wygląd ; impeccable grooming standards
+zrzucić parę kilo ; to cut a few pounds
+samouwielbieniowy, wywyższający siebie ; self-aggrandizing
+wojna z wyboru ; a war of choice
+zmiana reżimu ; regime change
+deklaracja misji, cel misji ; a mission statement
+tajne, niejawne ; classified
+inspektor generalny ; the inspector general
+cel strategiczny ; a strategic goal
+bezpośrednie zagrożenie ; an imminent threat
+zatopić flotę ; to sink the navy
+miotać się, działać chaotycznie ; to flail
+utknąć w konflikcie ; to be stuck in a conflict
+ciśnienie od wybuchu ; blast pressure
+piekielne warunki ; hellish conditions
+uchylić się od służby wojskowej ; to avoid service
+ostrogi kostne ; bone spurs
+brak przywództwa ; a lack of leadership
+w normalnych okolicznościach ; under normal circumstances
+przyznać się do czegoś, wziąć to na siebie ; to own up to something
+informować prasę ; to brief the press
+ładne obrazki, miła dla oka otoczka ; nice imagery
+tłumić, zatuszować ; to suppress
+tuszowanie ; a cover-up
+bagatelizować ; to downplay
+całkowicie sprzeczny z ; at complete odds with
+to dopiero wierzchołek góry lodowej ; that's just the tip of the iceberg
+ukrywać coś przed opinią publiczną ; to keep something from the public eye
+na każdym kroku ; at every turn
+utrzymywać, że wszystko jest pod kontrolą ; to claim it's all under control
+drobiazg, małe piwo ; small potatoes
+komisja sił zbrojnych ; the Armed Services Committee
+komisja ds. wywiadu ; the Intelligence Committee
+
+# --- Emocje, rodzina, zwroty ogólne ---
+odbijać się na kimś, kosztować kogoś (psychicznie) ; to take a toll on someone
+zapaść w pamięć, nie dawać spokoju ; to stick with someone
+codzienny chaos ; daily chaos
+nie mieć pojęcia, kiedy ; to have no idea when
+ludzie na samej górze, którzy podejmują decyzje ; the people at the top making decisions
+wiedza instytucjonalna ; institutional knowledge
+trwałość, możliwość utrzymania (na dłuższą metę) ; sustainability
+jest dla mnie wszystkim ; he's everything to me
+mój najmłodszy syn ; my youngest son
+modlić się za kogoś co noc ; to pray about someone every night
+martwię się, że ; my worry is that
+bądźmy szczerzy ; let's be honest
+co jest szalone z wielu powodów ; which is wild for a whole lot of reasons
+nie wspominając już o tym, że ; not the least of which being that
+ciągły napływ (np. doniesień) ; a constant influx
+jak nakreśliłeś ; as you outlined
+w którymś momencie ; at one point
+w tym momencie ; at this point
+przez większość dorosłego życia ; for most of his adult life
+to dla niego nic wielkiego ; it's not a big deal to him
+to go nie dotyczy ; it doesn't affect him
+zatankować do pełna ; to fill up your tank
+to niewielka cena za ; it's an inexpensive price to pay for
+runąć, spaść na łeb na szyję ; to come tumbling down
+katastrofalny wypadek ; a catastrophic mishap
+wprowadzić kogoś po cichu ; to secretly bring someone in
+moim gościem jest teraz ; joining me now is
+zostało nam niecałą minutę ; we have less than a minute left
+dziękuję jak zawsze ; thank you as always
+oglądamy te przemówienia, żeby inni nie musieli ; we watch these speeches so other people don't have to
+za co? po co to wszystko? ; for what?
