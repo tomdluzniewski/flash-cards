@@ -1,7 +1,20 @@
 {
+ "I am very well aware": {
+  "audio": "audio/tts/i-am-very-well-aware.mp3",
+  "tts": true
+ },
  "I didn't have that on my bingo card": {
   "audio": "audio/tts/i-didn-t-have-that-on-my-bingo-card.mp3",
   "tts": true
+ },
+ "I want to be clear": {
+  "audio": "audio/tts/i-want-to-be-clear.mp3",
+  "tts": true
+ },
+ "Period.": {
+  "audio": "audio/period.mp3",
+  "ipa": "/ˈpɪə.ɹi.əd/",
+  "word": "period"
  },
  "a DC insider": {
   "audio": "audio/tts/a-dc-insider.mp3",
@@ -20,6 +33,19 @@
   "audio": "audio/tts/a-catastrophic-mishap.mp3",
   "tts": true
  },
+ "a clear yes or no decision": {
+  "audio": "audio/tts/a-clear-yes-or-no-decision.mp3",
+  "tts": true
+ },
+ "a clip": {
+  "audio": "audio/clip.mp3",
+  "ipa": "/klɪp/",
+  "word": "clip"
+ },
+ "a cognitive screening": {
+  "audio": "audio/tts/a-cognitive-screening.mp3",
+  "tts": true
+ },
  "a combat veteran": {
   "audio": "audio/tts/a-combat-veteran.mp3",
   "tts": true
@@ -28,8 +54,25 @@
   "audio": "audio/tts/a-combat-zone.mp3",
   "tts": true
  },
+ "a comeback": {
+  "audio": "audio/comeback.mp3",
+  "ipa": "/ˈkʌmbæk/",
+  "word": "comeback"
+ },
+ "a common insult": {
+  "audio": "audio/tts/a-common-insult.mp3",
+  "tts": true
+ },
  "a compelling case": {
   "audio": "audio/tts/a-compelling-case.mp3",
+  "tts": true
+ },
+ "a congressperson": {
+  "audio": "audio/tts/a-congressperson.mp3",
+  "tts": true
+ },
+ "a congresswoman": {
+  "audio": "audio/tts/a-congresswoman.mp3",
   "tts": true
  },
  "a constant influx": {
@@ -58,8 +101,16 @@
   "ipa": "/dɪˈplɔɪmənt/",
   "word": "deployment"
  },
+ "a five-word reply": {
+  "audio": "audio/tts/a-five-word-reply.mp3",
+  "tts": true
+ },
  "a giant tax cut": {
   "audio": "audio/tts/a-giant-tax-cut.mp3",
+  "tts": true
+ },
+ "a government shutdown": {
+  "audio": "audio/tts/a-government-shutdown.mp3",
   "tts": true
  },
  "a groundswell of support": {
@@ -75,6 +126,11 @@
   "audio": "audio/tts/a-lack-of-leadership.mp3",
   "tts": true
  },
+ "a lawyer": {
+  "audio": "audio/lawyer.mp3",
+  "ipa": "/ˈlɔːjə(ɹ)/",
+  "word": "lawyer"
+ },
  "a leading question": {
   "audio": "audio/tts/a-leading-question.mp3",
   "tts": true
@@ -86,6 +142,10 @@
  },
  "a little late to pretend": {
   "audio": "audio/tts/a-little-late-to-pretend.mp3",
+  "tts": true
+ },
+ "a low IQ person": {
+  "audio": "audio/tts/a-low-iq-person.mp3",
   "tts": true
  },
  "a mission statement": {
@@ -105,6 +165,15 @@
   "audio": "audio/predicate.mp3",
   "ipa": "/ˈpɹɛd.ɪ.kət/",
   "word": "predicate"
+ },
+ "a preview": {
+  "audio": "audio/preview.mp3",
+  "ipa": "/ˈpɹiːvjuː/",
+  "word": "preview"
+ },
+ "a private argument": {
+  "audio": "audio/tts/a-private-argument.mp3",
+  "tts": true
  },
  "a properly predicated investigation": {
   "audio": "audio/tts/a-properly-predicated-investigation.mp3",
@@ -126,6 +195,10 @@
   "audio": "audio/tts/a-service-member.mp3",
   "tts": true
  },
+ "a shouting match": {
+  "audio": "audio/tts/a-shouting-match.mp3",
+  "tts": true
+ },
  "a snapshot in time": {
   "audio": "audio/tts/a-snapshot-in-time.mp3",
   "tts": true
@@ -144,6 +217,10 @@
  },
  "a unifying moment": {
   "audio": "audio/tts/a-unifying-moment.mp3",
+  "tts": true
+ },
+ "a verbal attack": {
+  "audio": "audio/tts/a-verbal-attack.mp3",
   "tts": true
  },
  "a war of choice": {
@@ -168,6 +245,10 @@
   "ipa": "/əˈlʌmnəs/",
   "word": "alumnus"
  },
+ "an aptitude test": {
+  "audio": "audio/tts/an-aptitude-test.mp3",
+  "tts": true
+ },
  "an existential crisis": {
   "audio": "audio/tts/an-existential-crisis.mp3",
   "tts": true
@@ -190,6 +271,10 @@
   "audio": "audio/outsider.mp3",
   "ipa": "/ˌaʊtˈsaɪdəɹ/",
   "word": "outsider"
+ },
+ "an unanswered challenge": {
+  "audio": "audio/tts/an-unanswered-challenge.mp3",
+  "tts": true
  },
  "an uphill climb": {
   "audio": "audio/tts/an-uphill-climb.mp3",
@@ -264,6 +349,10 @@
   "audio": "audio/tts/deeply-uncomfortable.mp3",
   "tts": true
  },
+ "deliberately public": {
+  "audio": "audio/tts/deliberately-public.mp3",
+  "tts": true
+ },
  "deployed": {
   "audio": "audio/deploy.mp3",
   "base": "deploy",
@@ -332,8 +421,20 @@
   "audio": "audio/tts/hire-the-engineer-to-do-the-job-right.mp3",
   "tts": true
  },
+ "his least favorite ladies": {
+  "audio": "audio/tts/his-least-favorite-ladies.mp3",
+  "tts": true
+ },
+ "if he's down, I'm down": {
+  "audio": "audio/tts/if-he-s-down-i-m-down.mp3",
+  "tts": true
+ },
  "impeccable grooming standards": {
   "audio": "audio/tts/impeccable-grooming-standards.mp3",
+  "tts": true
+ },
+ "in a later interview": {
+  "audio": "audio/tts/in-a-later-interview.mp3",
   "tts": true
  },
  "in case you're counting": {
@@ -356,12 +457,28 @@
   "audio": "audio/tts/institutional-knowledge.mp3",
   "tts": true
  },
+ "intentionally basic": {
+  "audio": "audio/tts/intentionally-basic.mp3",
+  "tts": true
+ },
  "it doesn't affect him": {
   "audio": "audio/tts/it-doesn-t-affect-him.mp3",
   "tts": true
  },
  "it doesn't pass the smell test": {
   "audio": "audio/tts/it-doesn-t-pass-the-smell-test.mp3",
+  "tts": true
+ },
+ "it had become part of the way he talks about her": {
+  "audio": "audio/tts/it-had-become-part-of-the-way-he-talks-about-her.mp3",
+  "tts": true
+ },
+ "it sounds like a challenge": {
+  "audio": "audio/tts/it-sounds-like-a-challenge.mp3",
+  "tts": true
+ },
+ "it worked because": {
+  "audio": "audio/tts/it-worked-because.mp3",
   "tts": true
  },
  "it's an inexpensive price to pay for": {
@@ -382,6 +499,10 @@
  },
  "let's be honest": {
   "audio": "audio/tts/let-s-be-honest.mp3",
+  "tts": true
+ },
+ "let's not waste our time": {
+  "audio": "audio/tts/let-s-not-waste-our-time.mp3",
   "tts": true
  },
  "livelihoods": {
@@ -410,12 +531,20 @@
   "audio": "audio/tts/nice-imagery.mp3",
   "tts": true
  },
+ "no long speech": {
+  "audio": "audio/tts/no-long-speech.mp3",
+  "tts": true
+ },
  "not getting as much attention as it should": {
   "audio": "audio/tts/not-getting-as-much-attention-as-it-should.mp3",
   "tts": true
  },
  "not the least of which being that": {
   "audio": "audio/tts/not-the-least-of-which-being-that.mp3",
+  "tts": true
+ },
+ "one stray remark": {
+  "audio": "audio/tts/one-stray-remark.mp3",
   "tts": true
  },
  "one to watch": {
@@ -447,6 +576,15 @@
   "audio": "audio/tts/regime-change.mp3",
   "tts": true
  },
+ "rhetoric": {
+  "audio": "audio/rhetoric.mp3",
+  "ipa": "/ˈɹɛtəɹɪk/",
+  "word": "rhetoric"
+ },
+ "same questions, same rules, same cameras": {
+  "audio": "audio/tts/same-questions-same-rules-same-cameras.mp3",
+  "tts": true
+ },
  "self-aggrandizing": {
   "audio": "audio/tts/self-aggrandizing.mp3",
   "tts": true
@@ -476,8 +614,24 @@
   "audio": "audio/tts/thank-you-as-always.mp3",
   "tts": true
  },
+ "that is where the clip becomes useful": {
+  "audio": "audio/tts/that-is-where-the-clip-becomes-useful.mp3",
+  "tts": true
+ },
+ "that left one obvious question": {
+  "audio": "audio/tts/that-left-one-obvious-question.mp3",
+  "tts": true
+ },
+ "that mattered because": {
+  "audio": "audio/tts/that-mattered-because.mp3",
+  "tts": true
+ },
  "that's just the tip of the iceberg": {
   "audio": "audio/tts/that-s-just-the-tip-of-the-iceberg.mp3",
+  "tts": true
+ },
+ "that's what my mama said": {
+  "audio": "audio/tts/that-s-what-my-mama-said.mp3",
   "tts": true
  },
  "the Armed Services Committee": {
@@ -488,8 +642,21 @@
   "audio": "audio/tts/the-intelligence-committee.mp3",
   "tts": true
  },
+ "the Oval Office": {
+  "audio": "audio/tts/the-oval-office.mp3",
+  "tts": true
+ },
+ "the audience": {
+  "audio": "audio/audience.mp3",
+  "ipa": "/ˈɔːdi.əns/",
+  "word": "audience"
+ },
  "the inspector general": {
   "audio": "audio/tts/the-inspector-general.mp3",
+  "tts": true
+ },
+ "the late great": {
+  "audio": "audio/tts/the-late-great.mp3",
   "tts": true
  },
  "the margin of error": {
@@ -504,8 +671,16 @@
   "audio": "audio/tts/the-people-at-the-top-making-decisions.mp3",
   "tts": true
  },
+ "the same exact insults": {
+  "audio": "audio/tts/the-same-exact-insults.mp3",
+  "tts": true
+ },
  "the straw that broke the camel's back": {
   "audio": "audio/tts/the-straw-that-broke-the-camel-s-back.mp3",
+  "tts": true
+ },
+ "they tend to be women": {
+  "audio": "audio/tts/they-tend-to-be-women.mp3",
   "tts": true
  },
  "tied": {
@@ -517,8 +692,28 @@
   "audio": "audio/tts/to-abuse-one-s-powers.mp3",
   "tts": true
  },
+ "to accept a challenge": {
+  "audio": "audio/tts/to-accept-a-challenge.mp3",
+  "tts": true
+ },
+ "to accept someone's own terms": {
+  "audio": "audio/tts/to-accept-someone-s-own-terms.mp3",
+  "tts": true
+ },
+ "to actually participate": {
+  "audio": "audio/tts/to-actually-participate.mp3",
+  "tts": true
+ },
  "to avoid service": {
   "audio": "audio/tts/to-avoid-service.mp3",
+  "tts": true
+ },
+ "to be a relation to someone": {
+  "audio": "audio/tts/to-be-a-relation-to-someone.mp3",
+  "tts": true
+ },
+ "to be ignored": {
+  "audio": "audio/tts/to-be-ignored.mp3",
   "tts": true
  },
  "to be on the record": {
@@ -529,8 +724,20 @@
   "audio": "audio/tts/to-be-stuck-in-a-conflict.mp3",
   "tts": true
  },
+ "to be willing to compete": {
+  "audio": "audio/tts/to-be-willing-to-compete.mp3",
+  "tts": true
+ },
+ "to brag about something": {
+  "audio": "audio/tts/to-brag-about-something.mp3",
+  "tts": true
+ },
  "to brief the press": {
   "audio": "audio/tts/to-brief-the-press.mp3",
+  "tts": true
+ },
+ "to bring something onto one's show": {
+  "audio": "audio/tts/to-bring-something-onto-one-s-show.mp3",
   "tts": true
  },
  "to cancel a vote": {
@@ -549,6 +756,16 @@
   "audio": "audio/tts/to-come-tumbling-down.mp3",
   "tts": true
  },
+ "to compete": {
+  "audio": "audio/compete.mp3",
+  "ipa": "/kəmˈpiːt/",
+  "word": "compete"
+ },
+ "to critique": {
+  "audio": "audio/critique.mp3",
+  "ipa": "/kɹɪˈtiːk/",
+  "word": "critique"
+ },
  "to cut a few pounds": {
   "audio": "audio/tts/to-cut-a-few-pounds.mp3",
   "tts": true
@@ -557,8 +774,16 @@
   "audio": "audio/tts/to-cut-the-session-short.mp3",
   "tts": true
  },
+ "to decide what it means if": {
+  "audio": "audio/tts/to-decide-what-it-means-if.mp3",
+  "tts": true
+ },
  "to declare independence": {
   "audio": "audio/tts/to-declare-independence.mp3",
+  "tts": true
+ },
+ "to deliver an insult publicly": {
+  "audio": "audio/tts/to-deliver-an-insult-publicly.mp3",
   "tts": true
  },
  "to denaturalize": {
@@ -570,6 +795,10 @@
   "audio": "audio/deport.mp3",
   "ipa": "/dɪˈpɔːt/",
   "word": "deport"
+ },
+ "to describe one's own performance": {
+  "audio": "audio/tts/to-describe-one-s-own-performance.mp3",
+  "tts": true
  },
  "to displace": {
   "audio": "audio/displace.mp3",
@@ -594,6 +823,10 @@
   "ipa": "/ˈdwɪn.dəl/",
   "word": "dwindle"
  },
+ "to end the shutdown": {
+  "audio": "audio/tts/to-end-the-shutdown.mp3",
+  "tts": true
+ },
  "to endorse": {
   "audio": "audio/endorse.mp3",
   "ipa": "/ɪnˈdɔːs/",
@@ -612,8 +845,20 @@
   "audio": "audio/tts/to-fly-in-the-face-of.mp3",
   "tts": true
  },
+ "to frequently refer to someone as": {
+  "audio": "audio/tts/to-frequently-refer-to-someone-as.mp3",
+  "tts": true
+ },
  "to get across one main point": {
   "audio": "audio/tts/to-get-across-one-main-point.mp3",
+  "tts": true
+ },
+ "to go against someone": {
+  "audio": "audio/tts/to-go-against-someone.mp3",
+  "tts": true
+ },
+ "to happen repeatedly": {
+  "audio": "audio/tts/to-happen-repeatedly.mp3",
   "tts": true
  },
  "to have a hell of a week": {
@@ -624,8 +869,16 @@
   "audio": "audio/tts/to-have-a-pretty-solid-theory.mp3",
   "tts": true
  },
+ "to have a problem with someone": {
+  "audio": "audio/tts/to-have-a-problem-with-someone.mp3",
+  "tts": true
+ },
  "to have no idea when": {
   "audio": "audio/tts/to-have-no-idea-when.mp3",
+  "tts": true
+ },
+ "to have nothing of substance to contribute": {
+  "audio": "audio/tts/to-have-nothing-of-substance-to-contribute.mp3",
   "tts": true
  },
  "to have some choice words for someone": {
@@ -648,8 +901,21 @@
   "audio": "audio/tts/to-hope-he-doesn-t-get-caught.mp3",
   "tts": true
  },
+ "to host something on television": {
+  "audio": "audio/tts/to-host-something-on-television.mp3",
+  "tts": true
+ },
+ "to identify": {
+  "audio": "audio/identify.mp3",
+  "ipa": "/aɪˈdɛn.tɪ.faɪ/",
+  "word": "identify"
+ },
  "to introduce articles of impeachment": {
   "audio": "audio/tts/to-introduce-articles-of-impeachment.mp3",
+  "tts": true
+ },
+ "to issue a challenge": {
+  "audio": "audio/tts/to-issue-a-challenge.mp3",
   "tts": true
  },
  "to keep something from the public eye": {
@@ -658,6 +924,10 @@
  },
  "to kick someone off health care": {
   "audio": "audio/tts/to-kick-someone-off-health-care.mp3",
+  "tts": true
+ },
+ "to kick someone out of the country": {
+  "audio": "audio/tts/to-kick-someone-out-of-the-country.mp3",
   "tts": true
  },
  "to lead by two points": {
@@ -670,6 +940,26 @@
  },
  "to lower your power bills": {
   "audio": "audio/tts/to-lower-your-power-bills.mp3",
+  "tts": true
+ },
+ "to name the test": {
+  "audio": "audio/tts/to-name-the-test.mp3",
+  "tts": true
+ },
+ "to never appear for the contest": {
+  "audio": "audio/tts/to-never-appear-for-the-contest.mp3",
+  "tts": true
+ },
+ "to not stop at something": {
+  "audio": "audio/tts/to-not-stop-at-something.mp3",
+  "tts": true
+ },
+ "to notice a pattern": {
+  "audio": "audio/tts/to-notice-a-pattern.mp3",
+  "tts": true
+ },
+ "to offer someone the stage": {
+  "audio": "audio/tts/to-offer-someone-the-stage.mp3",
   "tts": true
  },
  "to own up to something": {
@@ -689,6 +979,10 @@
   "audio": "audio/tts/to-pitch-in.mp3",
   "tts": true
  },
+ "to point out": {
+  "audio": "audio/tts/to-point-out.mp3",
+  "tts": true
+ },
  "to pray about someone every night": {
   "audio": "audio/tts/to-pray-about-someone-every-night.mp3",
   "tts": true
@@ -701,22 +995,50 @@
   "audio": "audio/tts/to-press-someone-about-something.mp3",
   "tts": true
  },
+ "to produce the contest": {
+  "audio": "audio/tts/to-produce-the-contest.mp3",
+  "tts": true
+ },
+ "to prove one's intelligence": {
+  "audio": "audio/tts/to-prove-one-s-intelligence.mp3",
+  "tts": true
+ },
  "to put it generously": {
   "audio": "audio/tts/to-put-it-generously.mp3",
+  "tts": true
+ },
+ "to put the questions on screen": {
+  "audio": "audio/tts/to-put-the-questions-on-screen.mp3",
   "tts": true
  },
  "to query a database": {
   "audio": "audio/tts/to-query-a-database.mp3",
   "tts": true
  },
+ "to question someone's intelligence": {
+  "audio": "audio/tts/to-question-someone-s-intelligence.mp3",
+  "tts": true
+ },
  "to rack up": {
   "audio": "audio/tts/to-rack-up.mp3",
+  "tts": true
+ },
+ "to reach later questions": {
+  "audio": "audio/tts/to-reach-later-questions.mp3",
+  "tts": true
+ },
+ "to realize what he had": {
+  "audio": "audio/tts/to-realize-what-he-had.mp3",
   "tts": true
  },
  "to regulate": {
   "audio": "audio/regulate.mp3",
   "ipa": "/ˈɹɛɡ.jʊ.leɪt/",
   "word": "regulate"
+ },
+ "to repeat a short list of words": {
+  "audio": "audio/tts/to-repeat-a-short-list-of-words.mp3",
+  "tts": true
  },
  "to run away from someone": {
   "audio": "audio/tts/to-run-away-from-someone.mp3",
@@ -732,6 +1054,14 @@
  },
  "to send everyone home early": {
   "audio": "audio/tts/to-send-everyone-home-early.mp3",
+  "tts": true
+ },
+ "to shift the story away from... toward...": {
+  "audio": "audio/tts/to-shift-the-story-away-from-toward.mp3",
+  "tts": true
+ },
+ "to show up": {
+  "audio": "audio/tts/to-show-up.mp3",
   "tts": true
  },
  "to sink the navy": {
@@ -781,8 +1111,29 @@
   "ipa": "/ˈtɛstɪfaɪ/",
   "word": "testify"
  },
+ "to throw an insult": {
+  "audio": "audio/tts/to-throw-an-insult.mp3",
+  "tts": true
+ },
  "to throw the game": {
   "audio": "audio/tts/to-throw-the-game.mp3",
+  "tts": true
+ },
+ "to troll someone": {
+  "audio": "audio/tts/to-troll-someone.mp3",
+  "tts": true
+ },
+ "to trounce": {
+  "audio": "audio/trounce.mp3",
+  "ipa": "/tɹaʊns/",
+  "word": "trounce"
+ },
+ "to turn a question into an attack": {
+  "audio": "audio/tts/to-turn-a-question-into-an-attack.mp3",
+  "tts": true
+ },
+ "to work through the same material": {
+  "audio": "audio/tts/to-work-through-the-same-material.mp3",
   "tts": true
  },
  "toxic": {
@@ -793,6 +1144,12 @@
  "under normal circumstances": {
   "audio": "audio/tts/under-normal-circumstances.mp3",
   "tts": true
+ },
+ "viewers": {
+  "audio": "audio/viewer.mp3",
+  "base": "viewer",
+  "ipa": "/ˈvjuːə/",
+  "word": "viewer"
  },
  "waist-to-height requirements": {
   "audio": "audio/tts/waist-to-height-requirements.mp3",
@@ -816,6 +1173,10 @@
  },
  "which is wild for a whole lot of reasons": {
   "audio": "audio/tts/which-is-wild-for-a-whole-lot-of-reasons.mp3",
+  "tts": true
+ },
+ "women of color": {
+  "audio": "audio/tts/women-of-color.mp3",
   "tts": true
  },
  "wrongful termination": {
