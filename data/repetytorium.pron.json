@@ -1,0 +1,584 @@
+{
+ "Actually, I'm busy.": {
+  "audio": "audio/tts/actually-i-m-busy.mp3",
+  "tts": true
+ },
+ "Another time, maybe.": {
+  "audio": "audio/tts/another-time-maybe.mp3",
+  "tts": true
+ },
+ "Are you doing anything on ...?": {
+  "audio": "audio/tts/are-you-doing-anything-on.mp3",
+  "tts": true
+ },
+ "Do you fancy joining me?": {
+  "audio": "audio/tts/do-you-fancy-joining-me.mp3",
+  "tts": true
+ },
+ "Do you fancy joining us?": {
+  "audio": "audio/tts/do-you-fancy-joining-us.mp3",
+  "tts": true
+ },
+ "Great!": {
+  "audio": "audio/great.mp3",
+  "ipa": "/ˈɡɹeɪt/",
+  "word": "great"
+ },
+ "I can't, sorry.": {
+  "audio": "audio/tts/i-can-t-sorry.mp3",
+  "tts": true
+ },
+ "I don't think I can.": {
+  "audio": "audio/tts/i-don-t-think-i-can.mp3",
+  "tts": true
+ },
+ "I don't think so. Why?": {
+  "audio": "audio/tts/i-don-t-think-so-why.mp3",
+  "tts": true
+ },
+ "I'd love to.": {
+  "audio": "audio/tts/i-d-love-to.mp3",
+  "tts": true
+ },
+ "Never mind.": {
+  "audio": "audio/tts/never-mind.mp3",
+  "tts": true
+ },
+ "See you there!": {
+  "audio": "audio/tts/see-you-there.mp3",
+  "tts": true
+ },
+ "Sounds fun.": {
+  "audio": "audio/tts/sounds-fun.mp3",
+  "tts": true
+ },
+ "Sure.": {
+  "audio": "audio/sure.mp3",
+  "ipa": "/ʃoː/",
+  "word": "sure"
+ },
+ "That's a shame.": {
+  "audio": "audio/tts/that-s-a-shame.mp3",
+  "tts": true
+ },
+ "What a pity!": {
+  "audio": "audio/tts/what-a-pity.mp3",
+  "tts": true
+ },
+ "What's on?": {
+  "audio": "audio/tts/what-s-on.mp3",
+  "tts": true
+ },
+ "Who's playing?": {
+  "audio": "audio/tts/who-s-playing.mp3",
+  "tts": true
+ },
+ "Why not!": {
+  "audio": "audio/tts/why-not.mp3",
+  "tts": true
+ },
+ "Why?": {
+  "audio": "audio/why.mp3",
+  "ipa": "/ʍaː/",
+  "word": "why"
+ },
+ "Would you like to ...?": {
+  "audio": "audio/tts/would-you-like-to.mp3",
+  "tts": true
+ },
+ "a campaign": {
+  "audio": "audio/campaign.mp3",
+  "ipa": "/kæmˈpeɪn/",
+  "word": "campaign"
+ },
+ "a canteen": {
+  "audio": "audio/canteen.mp3",
+  "ipa": "/kænˈtiːn/",
+  "word": "canteen"
+ },
+ "a community centre": {
+  "audio": "audio/tts/a-community-centre.mp3",
+  "tts": true
+ },
+ "a contestant": {
+  "audio": "audio/contestant.mp3",
+  "ipa": "/kənˈtɛstənt/",
+  "word": "contestant"
+ },
+ "a friendly": {
+  "audio": "audio/friendly.mp3",
+  "ipa": "/ˈfɹɛnd.li/",
+  "word": "friendly"
+ },
+ "a habit": {
+  "audio": "audio/habit.mp3",
+  "ipa": "/ˈhæb.ɪt/",
+  "word": "habit"
+ },
+ "a harmonica": {
+  "audio": "audio/harmonica.mp3",
+  "ipa": "/ˌhɑɹˈmɒ.nɪ.kə/",
+  "word": "harmonica"
+ },
+ "a headteacher": {
+  "audio": "audio/headteacher.mp3",
+  "ipa": "/hɛdˈtiːtʃə(ɹ)/",
+  "word": "headteacher"
+ },
+ "a marathon": {
+  "audio": "audio/marathon.mp3",
+  "ipa": "/ˈmæɹəθən/",
+  "word": "marathon"
+ },
+ "a movement": {
+  "audio": "audio/movement.mp3",
+  "ipa": "/ˈmuːv.mənt/",
+  "word": "movement"
+ },
+ "a point of view": {
+  "audio": "audio/tts/a-point-of-view.mp3",
+  "tts": true
+ },
+ "a portion": {
+  "audio": "audio/portion.mp3",
+  "ipa": "/ˈpɔːʃən/",
+  "word": "portion"
+ },
+ "a researcher": {
+  "audio": "audio/researcher.mp3",
+  "ipa": "/ɹɪˈsɜː.t͡ʃə/",
+  "word": "researcher"
+ },
+ "a resident": {
+  "audio": "audio/resident.mp3",
+  "ipa": "/ˈɹɛzɪdənt/",
+  "word": "resident"
+ },
+ "a school counsellor": {
+  "audio": "audio/tts/a-school-counsellor.mp3",
+  "tts": true
+ },
+ "aggressive": {
+  "audio": "audio/aggressive.mp3",
+  "ipa": "/əˈɡɹɛs.ɪv/",
+  "word": "aggressive"
+ },
+ "an excuse": {
+  "audio": "audio/excuse.mp3",
+  "ipa": "/ɪkˈskjuːz/",
+  "word": "excuse"
+ },
+ "an influence": {
+  "audio": "audio/influence.mp3",
+  "ipa": "/ˈɪn.flu.əns/",
+  "word": "influence"
+ },
+ "anonymous": {
+  "audio": "audio/anonymous.mp3",
+  "ipa": "/əˈnɑ.nə.məs/",
+  "word": "anonymous"
+ },
+ "bizarre": {
+  "audio": "audio/bizarre.mp3",
+  "ipa": "/bɪˈzɑː(ɹ)/",
+  "word": "bizarre"
+ },
+ "climate change": {
+  "audio": "audio/tts/climate-change.mp3",
+  "tts": true
+ },
+ "competitive": {
+  "audio": "audio/competitive.mp3",
+  "ipa": "/kəmˈpɛt.ɪ.tɪv/",
+  "word": "competitive"
+ },
+ "cruel": {
+  "audio": "audio/cruel.mp3",
+  "ipa": "/ˈkɹuːəl/",
+  "word": "cruel"
+ },
+ "definitely": {
+  "audio": "audio/definitely.mp3",
+  "ipa": "/ˈdɛf.ɪ.nɪt.li/",
+  "word": "definitely"
+ },
+ "disloyal": {
+  "audio": "audio/disloyal.mp3",
+  "ipa": "[dɪsˈlɔɪ(j)əɫ]",
+  "word": "disloyal"
+ },
+ "down to earth": {
+  "audio": "audio/tts/down-to-earth.mp3",
+  "tts": true
+ },
+ "each other": {
+  "audio": "audio/tts/each-other.mp3",
+  "tts": true
+ },
+ "elderly": {
+  "audio": "audio/elderly.mp3",
+  "ipa": "/ˈɛldəli/",
+  "word": "elderly"
+ },
+ "facilities": {
+  "audio": "audio/facilities.mp3",
+  "ipa": "/fəˈsɪlɪtiz/",
+  "word": "facilities"
+ },
+ "for no reason at all": {
+  "audio": "audio/tts/for-no-reason-at-all.mp3",
+  "tts": true
+ },
+ "glad": {
+  "audio": "audio/glad.mp3",
+  "ipa": "/ɡlæd/",
+  "word": "glad"
+ },
+ "happily ever after": {
+  "audio": "audio/tts/happily-ever-after.mp3",
+  "tts": true
+ },
+ "impractical": {
+  "audio": "audio/impractical.mp3",
+  "ipa": "/ɪmˈpɹæktɪkəl/",
+  "word": "impractical"
+ },
+ "in addition to": {
+  "audio": "audio/tts/in-addition-to.mp3",
+  "tts": true
+ },
+ "in common": {
+  "audio": "audio/tts/in-common.mp3",
+  "tts": true
+ },
+ "inappropriate": {
+  "audio": "audio/inappropriate.mp3",
+  "ipa": "/ˌɪnəˈpɹəʊpɹi.ət/",
+  "word": "inappropriate"
+ },
+ "interactions": {
+  "audio": "audio/interaction.mp3",
+  "base": "interaction",
+  "ipa": "/ˌɪn.təˈɹæk.ʃən/",
+  "word": "interaction"
+ },
+ "judo": {
+  "audio": "audio/judo.mp3",
+  "ipa": "/ˈd͡ʒuːdəʊ/",
+  "word": "judo"
+ },
+ "locked in": {
+  "audio": "audio/tts/locked-in.mp3",
+  "tts": true
+ },
+ "loyal": {
+  "audio": "audio/loyal.mp3",
+  "ipa": "/ˈlɔɪəl/",
+  "word": "loyal"
+ },
+ "magical": {
+  "audio": "audio/magical.mp3",
+  "ipa": "/ˈmæd͡ʒ.ɪ.kəl/",
+  "word": "magical"
+ },
+ "martial arts": {
+  "audio": "audio/tts/martial-arts.mp3",
+  "tts": true
+ },
+ "midnight": {
+  "audio": "audio/midnight.mp3",
+  "ipa": "[ˈmɪd̚naɪt]",
+  "word": "midnight"
+ },
+ "moody": {
+  "audio": "audio/moody.mp3",
+  "ipa": "/ˈmuːdi/",
+  "word": "moody"
+ },
+ "necessarily": {
+  "audio": "audio/necessarily.mp3",
+  "ipa": "/ˈnɛs.ə.sə.ɹɪ.li/",
+  "word": "necessarily"
+ },
+ "on the banks of": {
+  "audio": "audio/tts/on-the-banks-of.mp3",
+  "tts": true
+ },
+ "open-minded": {
+  "audio": "audio/open-minded.mp3",
+  "ipa": "/ˈəʊ.pən ˈmaɪn.dɪd/",
+  "word": "open-minded"
+ },
+ "opposite": {
+  "audio": "audio/opposite.mp3",
+  "ipa": "/ˈɒp.ə.zɪt/",
+  "word": "opposite"
+ },
+ "passionate": {
+  "audio": "audio/passionate.mp3",
+  "ipa": "/ˈpæʃənɪt/",
+  "word": "passionate"
+ },
+ "permission": {
+  "audio": "audio/permission.mp3",
+  "ipa": "/pəˈmɪʃ.ən/",
+  "word": "permission"
+ },
+ "popular": {
+  "audio": "audio/popular.mp3",
+  "ipa": "/ˈpɒp.jʊ.lə/",
+  "word": "popular"
+ },
+ "practical": {
+  "audio": "audio/practical.mp3",
+  "ipa": "/ˈpɹæk.tɪ.kəl/",
+  "word": "practical"
+ },
+ "proper": {
+  "audio": "audio/proper.mp3",
+  "ipa": "/ˈpɹɒpə/",
+  "word": "proper"
+ },
+ "romantic": {
+  "audio": "audio/romantic.mp3",
+  "ipa": "/ɹə(ʊ)ˈmæntɪk/",
+  "word": "romantic"
+ },
+ "self-confident": {
+  "audio": "audio/self-confident.mp3",
+  "word": "self-confident"
+ },
+ "selfish": {
+  "audio": "audio/selfish.mp3",
+  "ipa": "/ˈsɛl.fɪʃ/",
+  "word": "selfish"
+ },
+ "sensitive": {
+  "audio": "audio/sensitive.mp3",
+  "ipa": "/ˈsɛn.sɪt.ɪv/",
+  "word": "sensitive"
+ },
+ "seriously": {
+  "audio": "audio/seriously.mp3",
+  "ipa": "/ˈsɪə.ɹi.əs.li/",
+  "word": "seriously"
+ },
+ "skilled": {
+  "audio": "audio/skilled.mp3",
+  "ipa": "/skɪld/",
+  "word": "skilled"
+ },
+ "speed dating": {
+  "audio": "audio/tts/speed-dating.mp3",
+  "tts": true
+ },
+ "sympathetic": {
+  "audio": "audio/sympathetic.mp3",
+  "ipa": "/ˌsɪm.pəˈθɛt.ɪk/",
+  "word": "sympathetic"
+ },
+ "the elderly": {
+  "audio": "audio/elderly.mp3",
+  "ipa": "/ˈɛldəli/",
+  "word": "elderly"
+ },
+ "to be fond of": {
+  "audio": "audio/tts/to-be-fond-of.mp3",
+  "tts": true
+ },
+ "to be glad": {
+  "audio": "audio/tts/to-be-glad.mp3",
+  "tts": true
+ },
+ "to be keen on": {
+  "audio": "audio/tts/to-be-keen-on.mp3",
+  "tts": true
+ },
+ "to be responsible for": {
+  "audio": "audio/tts/to-be-responsible-for.mp3",
+  "tts": true
+ },
+ "to break up": {
+  "audio": "audio/tts/to-break-up.mp3",
+  "tts": true
+ },
+ "to bump into": {
+  "audio": "audio/tts/to-bump-into.mp3",
+  "tts": true
+ },
+ "to come in": {
+  "audio": "audio/tts/to-come-in.mp3",
+  "tts": true
+ },
+ "to dislike": {
+  "audio": "audio/dislike.mp3",
+  "ipa": "/dɪsˈlaɪk/",
+  "word": "dislike"
+ },
+ "to drop by": {
+  "audio": "audio/tts/to-drop-by.mp3",
+  "tts": true
+ },
+ "to drop someone off": {
+  "audio": "audio/tts/to-drop-someone-off.mp3",
+  "tts": true
+ },
+ "to encourage": {
+  "audio": "audio/encourage.mp3",
+  "ipa": "/ɪnˈkʊ.ɹɪd͡ʒ/",
+  "word": "encourage"
+ },
+ "to fall in love": {
+  "audio": "audio/tts/to-fall-in-love.mp3",
+  "tts": true
+ },
+ "to fancy": {
+  "audio": "audio/fancy.mp3",
+  "ipa": "/ˈfæn.si/",
+  "word": "fancy"
+ },
+ "to get in touch": {
+  "audio": "audio/tts/to-get-in-touch.mp3",
+  "tts": true
+ },
+ "to get in touch with": {
+  "audio": "audio/tts/to-get-in-touch-with.mp3",
+  "tts": true
+ },
+ "to get to know": {
+  "audio": "audio/tts/to-get-to-know.mp3",
+  "tts": true
+ },
+ "to get together": {
+  "audio": "audio/tts/to-get-together.mp3",
+  "tts": true
+ },
+ "to go out": {
+  "audio": "audio/tts/to-go-out.mp3",
+  "tts": true
+ },
+ "to hang out": {
+  "audio": "audio/tts/to-hang-out.mp3",
+  "tts": true
+ },
+ "to hate": {
+  "audio": "audio/hate.mp3",
+  "ipa": "/heɪt/",
+  "word": "hate"
+ },
+ "to have a lot in common": {
+  "audio": "audio/tts/to-have-a-lot-in-common.mp3",
+  "tts": true
+ },
+ "to have got a lot in common": {
+  "audio": "audio/tts/to-have-got-a-lot-in-common.mp3",
+  "tts": true
+ },
+ "to have got something in common": {
+  "audio": "audio/tts/to-have-got-something-in-common.mp3",
+  "tts": true
+ },
+ "to have something in common": {
+  "audio": "audio/tts/to-have-something-in-common.mp3",
+  "tts": true
+ },
+ "to let someone down": {
+  "audio": "audio/tts/to-let-someone-down.mp3",
+  "tts": true
+ },
+ "to live locally": {
+  "audio": "audio/tts/to-live-locally.mp3",
+  "tts": true
+ },
+ "to maintain": {
+  "audio": "audio/maintain.mp3",
+  "ipa": "/meɪnˈteɪn/",
+  "word": "maintain"
+ },
+ "to meet up": {
+  "audio": "audio/tts/to-meet-up.mp3",
+  "tts": true
+ },
+ "to pick someone up": {
+  "audio": "audio/tts/to-pick-someone-up.mp3",
+  "tts": true
+ },
+ "to socialise": {
+  "audio": "audio/tts/to-socialise.mp3",
+  "tts": true
+ },
+ "to socialize": {
+  "audio": "audio/socialize.mp3",
+  "ipa": "/ˈsoʊʃəlaɪz/",
+  "word": "socialize"
+ },
+ "to sound great": {
+  "audio": "audio/tts/to-sound-great.mp3",
+  "tts": true
+ },
+ "to spend time": {
+  "audio": "audio/tts/to-spend-time.mp3",
+  "tts": true
+ },
+ "to stand someone up": {
+  "audio": "audio/tts/to-stand-someone-up.mp3",
+  "tts": true
+ },
+ "to stay over": {
+  "audio": "audio/tts/to-stay-over.mp3",
+  "tts": true
+ },
+ "to take part": {
+  "audio": "audio/tts/to-take-part.mp3",
+  "tts": true
+ },
+ "to take someone out": {
+  "audio": "audio/tts/to-take-someone-out.mp3",
+  "tts": true
+ },
+ "to trust": {
+  "audio": "audio/trust.mp3",
+  "ipa": "/tɹʊst/",
+  "word": "trust"
+ },
+ "transport": {
+  "audio": "audio/transport.mp3",
+  "ipa": "/tɹænsˈpɔːt/",
+  "word": "transport"
+ },
+ "trustworthy": {
+  "audio": "audio/trustworthy.mp3",
+  "ipa": "/ˈtɹʌst.wɜː.ði/",
+  "word": "trustworthy"
+ },
+ "unreliable": {
+  "audio": "audio/unreliable.mp3",
+  "ipa": "/ˌʌn.ɹɪˈlaɪ.ə.bl̩/",
+  "word": "unreliable"
+ },
+ "voluntary": {
+  "audio": "audio/voluntary.mp3",
+  "ipa": "/ˈvɒl.ən.tɹi/",
+  "word": "voluntary"
+ },
+ "vulnerable": {
+  "audio": "audio/vulnerable.mp3",
+  "ipa": "/ˈvʌln(ə)ɹəbl̩/",
+  "word": "vulnerable"
+ },
+ "well-being": {
+  "audio": "audio/well-being.mp3",
+  "ipa": "/wɛlˈbiː.ɪŋ/",
+  "word": "well-being"
+ },
+ "willing": {
+  "audio": "audio/willing.mp3",
+  "ipa": "/ˈwɪlɪŋ/",
+  "word": "willing"
+ },
+ "withdrawn": {
+  "audio": "audio/withdrawn.mp3",
+  "ipa": "/wɪðˈdɹɔːn/",
+  "word": "withdrawn"
+ }
+}
